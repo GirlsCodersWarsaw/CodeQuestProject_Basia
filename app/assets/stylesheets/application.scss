@@ -53,6 +53,24 @@ body, button, input, label, select, td, textarea {
   font-size: 12px;
 }
 
+/* flash notice - messages */
+
+.notice {
+  font-size: 16px;
+  margin-left: 7%;
+  font-style: italic;
+  font-weight: bold;
+  color: green;
+}
+
+.alert {
+  font-size: 16px;
+  margin-left: 7%;
+  font-style: italic;
+  font-weight: bold;
+  color: red;
+}
+
 
 @import "users"
 

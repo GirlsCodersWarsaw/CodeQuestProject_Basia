@@ -1,9 +1,12 @@
 class Invitation < ActiveRecord::Base
 
-	# belongs_to :sender, :class_name => 'User'
-	# has_one :recipient, :class_name => 'User'
+	belongs_to :sender, :class_name => 'User'
+	has_one :recipient, :class_name => 'User'
 
-	validates_presence_of :recipient_email
+	validates :recipient_email, 
+			presence: true, 
+			format: { with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i, on: :create }, 
+			uniqueness: {case_sensitive: false}
 	validate :recipient_is_not_registered
 
 	private

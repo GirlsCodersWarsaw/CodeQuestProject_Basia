@@ -16,6 +16,9 @@ body
 		   = " | "
 		   = link_to "Login", new_user_session_path
 	
+		- flash.each do |name, msg|
+      		= content_tag :div, msg, class: name
+	
 	div#wrapper
     	section
       		= yield
