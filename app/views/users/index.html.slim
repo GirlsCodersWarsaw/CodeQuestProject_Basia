@@ -29,5 +29,17 @@ div.panel.panel-default
               = t.company.name
 
 = render 'invitations/form' 
+p.text-label
+  | Pending invitations:
+  br/
+p.text-text  
+  - @pending_invitations.each do |i|
+    = i.recipient_email
+    |  | 
+    = link_to "destroy", invitation_path(i.id), method: :delete, data: { confirm: 'Are you sure?' }
+    br/
+
+
+
 
 

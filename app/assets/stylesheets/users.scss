@@ -18,14 +18,20 @@ div.panel {
 /* invitation form */
 
 .text-label {
-	margin: 0 5px 0 5px;
+	margin: 15px 5px 0 15px;
+	display: block;
+	height: 20px;
+	font-weight: bold;
+}
+
+.text-text {
+	margin: 15px 5px 10px 15px;
 	display: block;
 	height: 20px;
 }
 
 .text-field {
-  margin-left: 10px;
-  margin: 5px;
+  margin: 6px;
   width:	320px;
   height:	35px;
 }
