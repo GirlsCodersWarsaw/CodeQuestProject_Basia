@@ -18,6 +18,8 @@ div.panel.panel-default
       		| email
       	th
       		| company
+        th
+
       
         - @team.each do |t|
           tr
@@ -27,6 +29,8 @@ div.panel.panel-default
               = t.email
             td
               = t.company.name
+            td.x-button-background
+              = link_to (image_tag("x.png", alt: "x", class: "x-button")), user_path(t), method: :delete, data: { confirm: 'Are you sure?' }
 
 = render 'invitations/form' 
 p.text-label
@@ -36,7 +40,7 @@ p.text-text
   - @pending_invitations.each do |i|
     = i.recipient_email
     |  | 
-    = link_to "destroy", invitation_path(i.id), method: :delete, data: { confirm: 'Are you sure?' }
+    = link_to "destroy", invitation_path(i), method: :delete, data: { confirm: 'Are you sure?' }
     br/
 
 

@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
 	devise_for :users, :controllers => {:registrations => "registrations"}
-	resources :users, only: [:index]
+	resources :users, only: [:index, :destroy]
 	root 'welcome#index'
 	resources :invitations, only: [:new, :create, :destroy] do
     	member do

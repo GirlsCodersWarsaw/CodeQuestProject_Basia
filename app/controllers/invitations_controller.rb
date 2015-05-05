@@ -20,31 +20,37 @@ class InvitationsController < ApplicationController
 
 	def destroy
 		@invitation = Invitation.find(params[:id])
+		@invitation.destroy
+
 		if @invitation.destroy
-			flash[:success] = "Invitation deleted"
+			flash[:notice] = "Invitation deleted"
 			redirect_to users_url
 		else
 			flash[:alert] = "something is wrong :/"
-			redirect_to users_path
+			redirect_to users_url
 	  end
   end
 
 	def confirm_invitation
-		@invitation = Invitation.find(params[:id])
-		@user = User.new do |user|
-			user.first_name = "first_name"
-			user.last_name = "last_name"
-			user.email = @invitation.recipient_email
-			user.password = "password"
-			user.company = @invitation.sender.company
-		end
+		if @invitation = Invitation.find_by_id(params[:id])
+			@user = User.new do |user|
+				user.first_name = "first_name"
+				user.last_name = "last_name"
+				user.email = @invitation.recipient_email
+				user.password = "password"
+				user.company = @invitation.sender.company
+			end
 
-		if @user.save
-			@invitation.update(accepted: true)
-			InvitationMailer.first_signup_data(@invitation).deliver
-			redirect_to root_path, notice: 'You have accepted an invitation and have signed up successfully.'
+			if @user.save
+				@invitation.update(accepted: true)
+				InvitationMailer.first_signup_data(@invitation).deliver
+				redirect_to root_path, notice: 'You have accepted an invitation and have signed up successfully.'
+			else
+				redirect_to root_path
+			end
 		else
-			redirect_to root_path
+			flash[:alert] = "your invitation is out of date"
+			redirect_to root_url
 		end
   end 
 
