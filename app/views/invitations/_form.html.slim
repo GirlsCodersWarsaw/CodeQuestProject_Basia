@@ -1,0 +1,4 @@
+= form_for @invitation, {controller: "invitations", action: "create"} do |f|
+  = f.label :recipient_email, "Friend's email address:", class: 'text-label'
+  = f.text_field :recipient_email, class: 'text-field'
+  = f.submit "Invite!", class: 'button'
