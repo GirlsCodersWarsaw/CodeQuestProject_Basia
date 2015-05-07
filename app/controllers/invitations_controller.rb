@@ -20,7 +20,6 @@ class InvitationsController < ApplicationController
 
 	def destroy
 		@invitation = Invitation.find(params[:id])
-		@invitation.destroy
 
 		if @invitation.destroy
 			flash[:notice] = "Invitation deleted"
@@ -32,7 +31,8 @@ class InvitationsController < ApplicationController
   end
 
 	def confirm_invitation
-		if @invitation = Invitation.find_by_id(params[:id])
+		@invitation = Invitation.find_by_id(params[:id])
+		if @invitation
 			@user = User.new do |user|
 				user.first_name = "first_name"
 				user.last_name = "last_name"
@@ -42,7 +42,7 @@ class InvitationsController < ApplicationController
 			end
 
 			if @user.save
-				@invitation.update(accepted: true)
+				@invitation.update_columns(accepted: true)
 				InvitationMailer.first_signup_data(@invitation).deliver
 				redirect_to root_path, notice: 'You have accepted an invitation and have signed up successfully.'
 			else
