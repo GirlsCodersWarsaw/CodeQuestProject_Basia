@@ -59,6 +59,11 @@ GEM
     dotenv (2.0.0)
     dotenv-rails (2.0.0)
       dotenv (= 2.0.0)
+    draper (2.1.0)
+      actionpack (>= 3.0)
+      activemodel (>= 3.0)
+      activesupport (>= 3.0)
+      request_store (~> 1.0)
     erubis (2.7.0)
     eventmachine (1.0.7)
     execjs (2.4.0)
@@ -99,6 +104,7 @@ GEM
     rake (10.4.2)
     rdoc (4.2.0)
       json (~> 1.4)
+    request_store (1.1.0)
     responders (1.1.2)
       railties (>= 3.2, < 4.2)
     sass (3.2.19)
@@ -157,6 +163,7 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   devise (~> 3.4.1)
   dotenv-rails
+  draper (~> 2.1.0)
   jbuilder (~> 2.0)
   jquery-rails
   pg

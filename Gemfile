@@ -41,3 +41,5 @@ gem 'dotenv-rails', :groups => [:development, :test]
 
 gem 'carrierwave', '~> 0.10.0'
 
+gem 'draper', '~> 2.1.0'
+
