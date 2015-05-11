@@ -6,7 +6,7 @@ nav.navbar.navbar-default
     div.collapse.navbar-collapse#bs-example-navbar-collapse-1
       ul.nav.navbar-nav
         li: a href="#" Timer
-        li: a href="#" Projects
+        li = link_to "Projects", projects_path
         li = link_to "Team", users_path
         li.dropdown
           a[href='#' class='dropdown-toggle' data-toggle="dropdown" role="button" aria-expanded="false"] 

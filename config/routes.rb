@@ -8,5 +8,6 @@ Rails.application.routes.draw do
       		get :confirm_invitation
     	end
   	end
+  	resources :projects
 
 end
