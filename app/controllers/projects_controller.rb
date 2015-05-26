@@ -53,9 +53,13 @@ class ProjectsController < ApplicationController
       flash[:alert] = "there is no user with email: '#{email}' in your team :("
       redirect_to edit_project_path
     else
-      @project.users<<@user
-      ProjectMailer.invite_to_project(@project, @user).deliver
-      redirect_to edit_project_path
+      if @project.add_user_to_project(@user)
+        ProjectMailer.invite_to_project(@project, @user).deliver
+        redirect_to edit_project_path
+      else
+        flash[:alert] = "user is already added to project"
+        redirect_to edit_project_path
+      end
     end
     
   end
