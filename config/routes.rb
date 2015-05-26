@@ -8,6 +8,11 @@ Rails.application.routes.draw do
       		get :confirm_invitation
     	end
   	end
-  	resources :projects
+  	resources :projects do
+  		member do
+      	get :invite
+      	post :invite
+    	end
+  	end
 
 end
