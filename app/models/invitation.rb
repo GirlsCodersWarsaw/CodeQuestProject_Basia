@@ -11,7 +11,7 @@ class Invitation < ActiveRecord::Base
 
 	scope :pending, -> (user) {
     where(accepted: false, sender: user)
-  }
+  	}
 
 	private
 
