@@ -22,9 +22,9 @@
   div.field
     = f.label :is_project_billable?
     br/
-    = f.check_box :billable, { checked: true }
+    = f.check_box :billable, { checked: false }
 
-  div.field#financial-details
+  div.field#financial-details 
     = f.label :hourly_rate
     br/
     = f.number_field :hourly_rate
