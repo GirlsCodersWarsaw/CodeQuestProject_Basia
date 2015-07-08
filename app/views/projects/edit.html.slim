@@ -1,17 +1,18 @@
-h1
-	| Edit Project:
+.projects	
+	h2
+		| Edit Project:
 
-= render "form"
+	= render "form"
 
-div#project-members
-	| project members:
-p
-	- @project.users.each do |p|
-		= p.email
-		br/
+	div.text-label
+		| project members:
+	p
+		- @project.users.each do |p|
+			= p.email
+			br/
 
-h4
-	| invite to project:
-= form_tag :action => 'invite' do
-	= text_field :invite_to_project, :email, placeholder: 'example@email.com' 
-	= submit_tag "Invite"
+	p.text-label
+		| invite to project:
+	= form_tag :action => 'invite' do
+		= text_field :invite_to_project, :email, placeholder: 'example@email.com', class: 'text-field'
+		= submit_tag "Invite", class: 'button'
