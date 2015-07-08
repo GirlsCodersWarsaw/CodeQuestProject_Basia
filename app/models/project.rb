@@ -1,7 +1,7 @@
 class Project < ActiveRecord::Base
 	belongs_to :company
 	has_and_belongs_to_many :users
-	validates :name, :billable, :hours, presence: true
+	validates :name, :hours, presence: true
 	validates :hours, :hourly_rate, numericality: true
 
 	after_initialize :default_value
@@ -13,6 +13,10 @@ class Project < ActiveRecord::Base
 			self.users<<user
 			true
 		end
+	end
+
+	def project_members_list
+		self.users.map{|u| u.first_name}.join(", ")
 	end
 
 	private
