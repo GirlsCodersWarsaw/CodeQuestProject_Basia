@@ -2,46 +2,46 @@
 
 <!-- bootstrap panel -->
 div.panel.panel-default
-  <!-- Default panel contents -->
-  div.panel-heading
-  	h4
-  		| My team
-  <!-- Table -->
-  - if @team.blank?
-    | Invite friends!
-  -else
-    table.table
-    	tr
-      	th
-      		| name
-      	th
-      		| email
-      	th
-      		| company
-        th
+	<!-- Default panel contents -->
+	div.panel-heading
+		h4
+			| My team
+	<!-- Table -->
+	- if @team.blank?
+		| Invite friends!
+	-else
+		table.table
+			tr
+				th
+					| name
+				th
+					| email
+				th
+					| company
+				th
 
-      
-        - @team.each do |t|
-          tr
-            td
-              = t.full_name
-            td
-              = t.email
-            td
-              = t.company.name
-            td.x-button-background
-              = link_to (image_tag("x.png", alt: "x", class: "x-button")), user_path(t), method: :delete, data: { confirm: 'Are you sure?' }
+			
+				- @team.each do |t|
+					tr
+						td
+							= t.full_name
+						td
+							= t.email
+						td
+							= t.company.name
+						td.x-button-background
+							= link_to (image_tag("x.png", alt: "x", class: "x-button")), user_path(t), method: :delete, data: { confirm: 'Are you sure?' }
 
 = render 'invitations/form' 
 p.text-label
-  | Pending invitations:
-  br/
+	| Pending invitations:
+	br/
 p.text-text  
-  - @pending_invitations.each do |i|
-    = i.recipient_email
-    |  | 
-    = link_to "destroy", invitation_path(i), method: :delete, data: { confirm: 'Are you sure?' }
-    br/
+	- @pending_invitations.each do |i|
+		= i.recipient_email
+		|  | 
+		= link_to "destroy", invitation_path(i), method: :delete, data: { confirm: 'Are you sure?' }
+		br/
 
 
 

@@ -1,21 +1,15 @@
 class RegistrationsController < Devise::RegistrationsController
-  def new
-    super
-  end
+	
+	def create
+		@signup = Signup.new(params)
 
-  def create
-    @signup = Signup.new(params)
+		if @signup.save
+			sign_in @signup.user
+			redirect_to root_path, notice: 'You have signed up successfully.'
+		else
+			render action: :new
+		end
 
-    if @signup.save
-      sign_in @signup.user
-      redirect_to root_path, notice: 'You have signed up successfully.'
-    else
-      render action: :new
-    end
+	end
 
-  end
-
-  def update
-    super
-  end
 end 

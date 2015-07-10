@@ -1,554 +1,554 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-  <dict>
-    <key>change-in-behavior-or-level-of-consciousness</key>
-    <dict>
-      <key>title</key>
-      <string>CHANGE IN BEHAVIOR OR LEVEL OF CONSCIOUSNESS</string>
-      <key>text</key>
-      <string>&lt;p&gt;A major or sudden change in behavior or level of consciousness after stroke may be caused by side effects from such medications as pain pills or sleeping pills, second stroke, seizures, or infection.&lt;/p&gt;</string>
-    </dict>
-    <key>pe</key>
-    <dict>
-      <key>title</key>
-      <string>PULMONARY EMBOLISM (PE)</string>
-      <key>text</key>
-      <string>&lt;p&gt;Pulmonary embolism is when part of a blood clot that forms in the veins, usually the leg veins, also known as “deep venous thrombosis (DVT),” breaks off and floats to the lungs.&lt;/p&gt;</string>
-    </dict>
-    <key>dvt</key>
-    <dict>
-      <key>title</key>
-      <string>DEEP VENOUS THROMBOSIS (DVT)</string>
-      <key>text</key>
-      <string>&lt;p&gt;Deep venous thrombosis is a blood clot that forms in the veins, usually in the leg veins.&lt;/p&gt;</string>
-    </dict>
-    <key>uti</key>
-    <dict>
-      <key>title</key>
-      <string>URINARY TRACT INFECTION (UTI)</string>
-      <key>text</key>
-      <string>&lt;p&gt;A urinary tract infection is an infection of the path or &quot;tract&quot; that urine follows inside the body, from the kidney, where urine is made, to the bladder, where urine is stored until a person urinates it out.&lt;/p&gt;</string>
-      <key>ventilator</key>
-    </dict>
-    <dict>
-      <key>imageName</key>
-      <string>vent</string>
-      <key>title</key>
-      <string>MECHANICAL VENTILATION</string>
-      <key>text</key>
-      <string>&lt;p&gt; A ventilator is a machine that helps a patient to breathe. Patients are usually placed on “mechanical ventilation” because of a medical problem that makes it hard for them to breathe well on their own. While on the ventilator, the body is able to rest so that it can heal.
-        The ventilator will alert the staff of any problems or changes in the patient’s condition. Usually when an alarm sounds, there is no great cause for concern. Sometimes the problem corrects itself &amp; other times an ICU staff may come to check the alarm. The ICU staff are highly trained professionals &amp; capable of handling all alarms. &lt;b&gt;Please do not ever turn off an alarm, move the ventilator or touch its screen, buttons, or tubes.&lt;/b&gt;&lt;/p&gt;</string>
-    </dict>
-    <key>level-of-consciousness</key>
-    <dict>
-      <key>title</key>
-      <string>ALTERED LEVEL OF CONSCIOUSNESS</string>
-      <key>text</key>
-      <string>&lt;p&gt;Any injury to the brain will make a person less alert.  A major or sudden change in behavior or level of consciousness &lt;b&gt;AFTER&lt;/b&gt; stroke may also be caused by side effects from such medications as pain pills or sleeping pills, second stroke, seizures, or infection.&lt;/p&gt;</string>
-    </dict>
-    <key>mri</key>
-    <dict>
-      <key>imageName</key>
-      <string>mri</string>
-      <key>title</key>
-      <string>MRI</string>
-      <key>text</key>
-      <string>&lt;p&gt;An MRI is like a CT scan, but uses magnets instead of X-rays to take pictures. It can sometimes show early damage or swelling in the brain.  It’s a safe &amp; painless test that requires laying still on a bed that slides into a &quot;tunnel&quot;. These procedures usually take 15-45 minutes.&lt;/p&gt;</string>
-    </dict>
-    <key>feeding-tube</key>
-    <dict>
-      <key>imageName</key>
-      <string>NGT</string>
-      <key>title</key>
-      <string>NG TUBE</string>
-      <key>text</key>
-      <string>&lt;p&gt; The feeding tube or nasogastric tube (NG-tube for short) may be used if stroke has weakened the muscles that prevent food and liquid from entering the windpipe and lungs during swallowing, which puts the patient at risk for pneumonia.&lt;/p&gt;&lt;p&gt; If it will be a while before eating by mouth is safe, the NG tube will be replaced with a gastrostomy tube (G-tube) placed through the stomach wall.&lt;/p&gt;</string>
-    </dict>
-    <key>breathing-tube</key>
-    <dict>
-      <key>imageName</key>
-      <string>ETT</string>
-      <key>title</key>
-      <string>ET TUBE</string>
-      <key>text</key>
-      <string>&lt;p&gt;The breathing tube or endotracheal tube (ET-tube for short), is placed in the nose or mouth and into the windpipe to keep the airway open and help the patient breathe. Those who need longer-term breathing assistance may have a tracheostomy tube place through the neck and into the windpipe.&lt;/p&gt;</string>
-    </dict>
-    <key>pulse-oximeter</key>
-    <dict>
-      <key>imageName</key>
-      <string>pulse</string>
-      <key>title</key>
-      <string>PULSE OXIMETER</string>
-      <key>text</key>
-      <string>&lt;p&gt;The &quot;pulse ox&quot;, or pulse oximeter is usually attached to the finger or ear and continuously shows the amount of oxygen in the blood.&lt;/p&gt;</string>
-    </dict>
-    <key>high-blood-pressure</key>
-    <dict>
-      <key>audioName</key>
-      <string>hypertension</string>
-      <key>imageName</key>
-      <string>hypertension</string>
-      <key>title</key>
-      <string>HYPERTENSION</string>
-      <key>text</key>
-      <string>&lt;ul&gt;&lt;li&gt;Hypertension is high blood pressure against artery walls. &lt;/li&gt;&lt;li&gt;Hypertension can be present for many years without symptoms and the high blood pressure begins to slowly damage the blood vessels and the heart.&lt;/li&gt;&lt;li&gt;High blood pressure is called the &quot;silent killer&quot; because it damages without symptoms over a long period of time until there is serious illness in many parts of the body.&lt;/li&gt;&lt;/ul&gt;</string>
-    </dict>
-    <key>monitors</key>
-    <dict>
-      <key>videoName</key>
-      <string>monitors</string>
-      <key>title</key>
-      <string>PATIENT MONITOR</string>
-      <key>text</key>
-      <string>&lt;p&gt;Monitors are used to continuously measure vital signs. In this video example, the first number from top shows a heart rate (HR) of 60 bpm, or beats per minute. The next number is 98%, which is the oxygen level in the blood. The following number 30 shows the number of breaths in one minute, or respirations per minute (rpm). Last is the blood pressure that is 121/75.&lt;/p&gt;</string>
-    </dict>
-    <key>brainstem</key>
-    <dict>
-      <key>imageName</key>
-      <string>brainstem</string>
-      <key>title</key>
-      <string>BRAIN STEM</string>
-      <key>text</key>
-      <string>&lt;p&gt;This area of the brain is responsible for movement and life-preserving reflexes. There may be problems with breathing, swallowing, consciousness, and limb weakness.&lt;/p&gt;</string>
-    </dict>
-    <key>cerebellum</key>
-    <dict>
-      <key>imageName</key>
-      <string>cerebellum</string>
-      <key>title</key>
-      <string>CEREBELLUM</string>
-      <key>text</key>
-      <string>&lt;p&gt;This area of the brain is responsible for coordination and balance. There may be problems with walking, sitting up or dizziness.&lt;/p&gt;</string>
-    </dict>
-    <key>right-occipital</key>
-    <dict>
-      <key>imageName</key>
-      <string>occipital-lobe</string>
-      <key>title</key>
-      <string>RIGHT OCCIPITAL LOBE</string>
-      <key>text</key>
-      <string>&lt;p&gt;This area of the brain is responsible for vision. There may be problems with partial blindness on the left or other problems with vision or moving the eyes.&lt;/p&gt;</string>
-    </dict>
-    <key>left-occipital</key>
-    <dict>
-      <key>imageName</key>
-      <string>occipital-lobe</string>
-      <key>title</key>
-      <string>LEFT OCCIPITAL LOBE</string>
-      <key>text</key>
-      <string>&lt;p&gt;This area of the brain is responsible for vision. There may be problems with partial blindness on the right or other problems with vision or moving the eyes.&lt;/p&gt;</string>
-    </dict>
-    <key>right-parietal</key>
-    <dict>
-      <key>imageName</key>
-      <string>parietal-lobe</string>
-      <key>title</key>
-      <string>RIGHT PARIETAL LOBE</string>
-      <key>text</key>
-      <string>&lt;p&gt;This area of the brain is responsible for vision, attention and sensation. There may be problems with partial blindness, numbness on the left side of the face or body, and/or ignoring or “neglecting” the left side of the world. &lt;/p&gt;</string>
-    </dict>
-    <key>left-parietal</key>
-    <dict>
-      <key>imageName</key>
-      <string>parietal-lobe</string>
-      <key>title</key>
-      <string>LEFT PARIETAL LOBE</string>
-      <key>text</key>
-      <string>&lt;p&gt;This area of the brain is responsible for language, thought and sensation. There may be problems with speaking, logic and numbness on the right side of the face or body.&lt;/p&gt;</string>
-    </dict>
-    <key>right-temporal</key>
-    <dict>
-      <key>imageName</key>
-      <string>temporal-lobe</string>
-      <key>title</key>
-      <string>RIGHT TEMPORAL LOBE</string>
-      <key>text</key>
-      <string>&lt;p&gt;This area of the brain is responsible for personality and thought. There may be problems with memory and confusion or very unusual behavior. &lt;/p&gt;</string>
-    </dict>
-    <key>left-temporal</key>
-    <dict>
-      <key>imageName</key>
-      <string>temporal-lobe</string>
-      <key>title</key>
-      <string>LEFT TEMPORAL LOBE</string>
-      <key>text</key>
-      <string>&lt;p&gt;This area of the brain is responsible for language and thought. There may be problems with speaking, reading or understanding language as well as confusion or very unusual behavior.&lt;/p&gt;</string>
-    </dict>
-    <key>right-frontal</key>
-    <dict>
-      <key>imageName</key>
-      <string>frontal-lobe</string>
-      <key>title</key>
-      <string>RIGHT FRONTAL LOBE</string>
-      <key>text</key>
-      <string>&lt;p&gt;This area of the brain is responsible for movement, speech, emotion, attention, and spatial awareness. There may be problems with speaking, confusion, mood swings, weakness of the face or body, and/or ignoring or “neglecting” the left side of the world.&lt;/p&gt;</string>
-    </dict>
-    <key>left-frontal</key>
-    <dict>
-      <key>imageName</key>
-      <string>frontal-lobe</string>
-      <key>title</key>
-      <string>LEFT FRONTAL LOBE</string>
-      <key>text</key>
-      <string>&lt;p&gt;This area of the brain is responsible for movement, speech, emotion, and attention. There may be problems with speaking, confusion, mood swings and/or weakness on the right side of the face or body.&lt;/p&gt;</string>
-    </dict>
-    <key>brain</key>
-    <dict>
-      <key>title</key>
-      <string>BRAIN</string>
-      <key>videoName</key>
-      <string>3D-Brain</string>
-      <key>text</key>
-      <string>&lt;p&gt;The brain is the most complex part of our body. The brain is divided into a right and left half. Tap PLAY to see a 3D tour of the brain. Each of the lobes will be shown in a different color and will light up in the following order:&lt;/p&gt;
-        &lt;ol&gt;
-        &lt;table&gt;
-        &lt;tr&gt;
-        &lt;th&gt;
-        &lt;li class=&quot;red&quot;&gt;&lt;b&gt;Right and Left FRONTAL Lobe&lt;/b&gt;&lt;/li&gt;
-        &lt;li class=&quot;dark-blue&quot;&gt;&lt;b&gt;Right and Left TEMPORAL Lobe&lt;/b&gt;&lt;/li&gt;
-        &lt;li class=&quot;brown&quot;&gt;&lt;b&gt;CEREBELLUM&lt;/b&gt;&lt;/li&gt;
-        &lt;/&gt;
-        &lt;th&gt;
-        &lt;li class=&quot;orange&quot;&gt;&lt;b&gt;Right and Left OCCIPITAL Lobe&lt;/b&gt;&lt;/li&gt;
-        &lt;li class=&quot;green&quot;&gt;&lt;b&gt;Right and Left PARIETAL Lobe&lt;/b&gt;&lt;/li&gt;
-        &lt;li class=&quot;yellow&quot;&gt;&lt;b&gt;BRAINSTEM&lt;/b&gt;&lt;/li&gt;
-        &lt;/th&gt;
-        &lt;/tr&gt;
-        &lt;/table&gt;
-        &lt;/ol&gt;
-      </string>
-    </dict>
-    <key>angiography</key>
-    <dict>
-      <key>imageName</key>
-      <string>angiography</string>
-      <key>videoName</key>
-      <string>angiography</string>
-      <key>title</key>
-      <string>ANGIOGRAPHY</string>
-      <key>text</key>
-      <string>&lt;p&gt;Angiography is when a &lt;b&gt;catheter&lt;/b&gt; (a long, thin, hollow tube) is used to inject dye into a person’s blood vessels to make them more visible on X-ray. Angiograms are done with a CT scan, X-ray or MRI.&lt;/p&gt;</string>
-    </dict>
-    <key>diabetes</key>
-    <dict>
-      <key>audioName</key>
-      <string>diabetes</string>
-      <key>title</key>
-      <string>DIABETES MELLITUS </string>
-      <key>text</key>
-      <string>&lt;p&gt;Diabetes is a disease characterized by high blood glucose or “blood sugar.” This happens when the body doesn&apos;t make enough insulin — the hormone that turns the sugar we eat into energy, doesn&apos;t respond properly to insulin, or both. Symptoms of high blood sugar include frequent urination or “polyuria,” increased thirst or “polydipsia” and increased hunger or “polyphagia.”&lt;/p&gt;</string>
-    </dict>
-    <key>carotid-endarterectomy</key>
-    <dict>
-      <key>imageName</key>
-      <string>carotid-artery-surgery</string>
-      <key>title</key>
-      <string>ENDARTERECTOMY</string>
-      <key>text</key>
-      <string>&lt;p&gt;&lt;b&gt;Carotid endarterectomy&lt;/b&gt; the plaque that has built up on the inside of the artery is taken out by performing a small surgery. A small cut is made in the side of the neck, which allows the surgeon to get to the carotid artery, open the artery and take out the fat.&lt;/p&gt;</string>
-    </dict>
-    <key>angioplasty-and-stenting</key>
-    <dict>
-      <key>audioName</key>
-      <string>angioplasty-stenting</string>
-      <key>videoName</key>
-      <string>angioplasty-stent</string>
-      <key>title</key>
-      <string>ANGIOPLASTY &amp; STENTING</string>
-      <key>text</key>
-      <string>&lt;ul&gt;&lt;li&gt;Carotid &lt;b&gt;angioplasty&lt;/b&gt; is a type of endovascular procedure where doctors try to remove a blood clot by passing a catheter (a long, thin, hollow tube) to the site of the blocked blood vessel in the brain. In some situations, a tiny balloon is inflated inside a blocked blood vessel.&lt;/li&gt;
-        &lt;li&gt;&lt;b&gt;Stenting&lt;/b&gt; is when a steel screen or “stent” is placed inside the blood vessel to help keep it open and decrease the chance of another blockage.&lt;/li&gt;&lt;/ul&gt;</string>
-    </dict>
-    <key>endovascular-procedures</key>
-    <dict>
-      <key>title</key>
-      <string>ENDOVASCULAR PROCEDURE</string>
-      <key>text</key>
-      <string>&lt;ul&gt;&lt;li&gt;&lt;b&gt;Endovascular&lt;/b&gt; means “inside the blood vessel”, so an endovascular procedure is a small surgery where doctors will use instruments to remove the plaque buildup in the carotid arteries.&lt;/li&gt;
-        &lt;li&gt;The two carotid arteries are important blood vessels because they are the main supply of oxygen to the brain. The pulse you feel on your neck is blood moving through the carotid arteries.&lt;/li&gt;&lt;/ul&gt;</string>
-    </dict>
-    <key>tPA</key>
-    <dict>
-      <key>title</key>
-      <string>tPA</string>
-      <key>text</key>
-      <string>&lt;p&gt;tPA is short for &lt;b&gt;tissue plasminogen activator&lt;/b&gt;, a medicine injected into the body to dissolve blood clots and reopen blocked blood vessels to the brain.&lt;/p&gt;</string>
-    </dict>
-    <key>blood-cell-counts</key>
-    <dict>
-      <key>title</key>
-      <string>CBC</string>
-      <key>text</key>
-      <string>&lt;p class=&quot;def-paraghraph&quot;&gt;A &lt;b&gt;CBC&lt;/b&gt;, or complete blood count, is a lab test that checks the 3 types of blood cells.  Each one have a special purpose:&lt;/p&gt;
-        &lt;ul&gt;&lt;li&gt;&lt;b&gt;Red blood cells (RBC)&lt;/b&gt;: Our body needs oxygen to work properly. Red blood cells carry oxygen to every part of the body and travel through many different blood vessels.&lt;/li&gt;
-        &lt;li&gt;&lt;b&gt;White blood cells (WBC)&lt;/b&gt; fight infection.&lt;/li&gt;
-        &lt;li&gt;&lt;b&gt;Platelets&lt;/b&gt; help control bleeding.  If platelets are low, you may bruise easily, or it may take much longer than others for your bleeding to stop.&lt;/li&gt;&lt;/ul&gt;</string>
-    </dict>
-    <key>ischemic-stroke</key>
-    <dict>
-      <key>title</key>
-      <string>ISCHEMIC stroke</string>
-      <key>videoName</key>
-      <string>Ischemic Stroke-patient setup(INTRO)(SAMPLE)</string>
-      <key>audioName</key>
-      <string>ischemic-stroke</string>
-      <key>text</key>
-      <string>&lt;ul class=&apos;for-definition-modal&apos;&gt;&lt;li&gt;The heart pumps blood to the brain for it to work properly.  Blood needs to
-        move easily though blood vessels. &lt;/li&gt;
-        &lt;li&gt;An ischemic stroke happens when a part of the brain doesn&apos;t receive the blood that it needs because of a blockage in any one of these blood vessels&lt;/li&gt;
-        &lt;li&gt;When this happens, that part of the brain that doesn’t receive blood gets injured and begins to die.&lt;/li&gt;
-        &lt;li&gt;A stroke is sometimes called a brain attack because it’s similar to what
-        happens in a heart attack.&lt;/li&gt;&lt;/ul&gt;</string>
-    </dict>
-    <key>eeg</key>
-    <dict>
-      <key>imageName</key>
-      <string>EEG</string>
-      <key>title</key>
-      <string>EEG</string>
-      <key>text</key>
-      <string>&lt;p&gt;An EEG records the electrical signals of the brain, similar to how an EKG records the electrical signals of the heart. This is very safe and can provide insight the health of the brain. It is usually used to detect seizures&lt;/p&gt;</string>
-    </dict>
-    <key>national-institutes-of-health-stroke-scale</key>
-    <dict>
-      <key>title</key>
-      <string>NIH STROKE SCALE</string>
-      <key>text</key>
-      <string>&lt;p&gt;The National Institute of Health Stroke Scale (NIHSS) is a tool used by doctors to measure how much damage a stroke has caused. Research suggests it may also be used to predict recovery and survival after stroke.&lt;/p&gt;</string>
-    </dict>
-    <key>blood-clots-in-the-legs</key>
-    <dict>
-      <key>videoName</key>
-      <string>dvt-video</string>
-      <key>audioName</key>
-      <string>dvt-audio</string>
-      <key>title</key>
-      <string>DEEP VENOUS THROMBOSIS DEEP VENOUS THROMBOSIS</string>
-      <key>text</key>
-      <string>&lt;p&gt;Deep venous thrombosis or “DVT” is a blood clot that usually forms the leg veins. Some people with stroke are at higher risk for these blood clots.&lt;/p&gt;</string>
-    </dict>
-    <key>delirium</key>
-    <dict>
-      <key>title</key>
-      <string>DELERIUM</string>
-      <key>text</key>
-      <string>&lt;p&gt;Delirium is a sudden change in a person’s mental state. It can result in sudden confusion, sleepiness, extreme agitation, and sometimes hallucinations.&lt;/p&gt;</string>
-    </dict>
-    <key>stomach-ulcers</key>
-    <dict>
-      <key>title</key>
-      <string>STOMACH ULCER or PEPTIC ULCER DISEASE (PUD)</string>
-      <key>text</key>
-      <string>&lt;p&gt;The stress of stroke and hospitalization may cause the stomach to release too much acid or “juice.” Normal amounts of digestive juice is necessary to break down food but too much can also break down the lining of the stomach resulting in a sore or “ulcer.&quot;&lt;/p&gt;</string>
-    </dict>
-    <key>bleeding</key>
-    <dict>
-      <key>title</key>
-      <string>BLEEDING DISORDER</string>
-      <key>text</key>
-      <string>&lt;p&gt;Serious illnesses such as a stroke can decrease the blood’s ability to clot. This may cause excessive bleeding when areas of the body are poked to draw blood or insert tubes or IVs.&lt;/p&gt;</string>
-    </dict>
-    <key>infections</key>
-    <dict>
-      <key>title</key>
-      <string>INFECTION</string>
-      <key>text</key>
-      <string>&lt;p&gt;Stroke weakens the immune system and can increase the chances of infection. Infections may be caused by not being able to keep one’s own spit out of his or her lungs, breathing tubes, IVs, tubes to help collect urine, and other tubes and catheters.&lt;/p&gt;</string>
-    </dict>
-    <key>swelling-in-the-brain</key>
-    <dict>
-      <key>title</key>
-      <string>BRAIN SWELLING or INTRACRANIAL HYPERTENSION</string>
-      <key>text</key>
-      <string>&lt;p&gt;A certain amount of swelling after stroke is a normal part of healing, similar to what happens after an ankle sprain. Too much swelling can put a lot of pressure on the brain. If the doctors are worried that the brain pressure is too high, they may repeat a CT or MRI, or a small hole may be drilled into the skull to lower the pressure. Pressure can then be measured and controlled.&lt;/p&gt;</string>
-    </dict>
-    <key>heart-attack</key>
-    <dict>
-      <key>videoName</key>
-      <string>heart-attack</string>
-      <key>title</key>
-      <string>HEART ATTACK or MYOCARDIAL INFARCTION (MI)</string>
-      <key>text</key>
-      <string>&lt;ul&gt;&lt;li&gt;A heart attack happens when a part of the heart doesn&apos;t receive the blood and oxygen it needs, becomes injured and starts to die.&lt;/li&gt;&lt;li&gt;A heart attack can happen after heart disease has developed.&lt;/li&gt;&lt;li&gt;The risk factors that lead to heart disease and heart attack are very similar to those leading to stroke.&lt;/li&gt;&lt;/ul&gt;</string>
-    </dict>
-    <key>doctors</key>
-    <dict>
-      <key>title</key>
-      <string>TYPES OF DOCTORS</string>
-      <key>text</key>
-      <string>&lt;p&gt;Doctors may include one or more of the following:&lt;/p&gt;
-        &lt;ul&gt;&lt;table&gt;&lt;th&gt;&lt;li&gt;intensivist&lt;/li&gt;&lt;li&gt;neurologist&lt;/li&gt;&lt;li&gt;cardiologist&lt;/li&gt;&lt;li&gt;pulmonologist&lt;/li&gt;&lt;/th&gt;&lt;th&gt;&lt;li&gt;neurosurgeon&lt;/li&gt;&lt;li&gt;internist&lt;/li&gt;&lt;li&gt;resident&lt;/li&gt;&lt;li&gt;medical Student&lt;/li&gt;&lt;/th&gt;&lt;/table&gt;&lt;/ul&gt;</string>
-    </dict>
-    <key>blood-pressure</key>
-    <dict>
-      <key>videoName</key>
-      <string>blood-pressure</string>
-      <key>title</key>
-      <string>SYSTOLIC &amp; DIASTOLIC BLOOD PRESSURE</string>
-      <key>text</key>
-      <string>&lt;p&gt;Blood pressure is the force placed inside the blood vessels as the heart pumps blood. Blood pressure has two numbers:&lt;/p&gt;
-        &lt;ul&gt;&lt;li&gt;The first number &lt;b&gt;(systolic)&lt;/b&gt; shows the pressure as blood leaves the heart.&lt;/li&gt;
-        &lt;li&gt;The second number &lt;b&gt;(diastolic)&lt;/b&gt; shows the pressure as blood returns to the heart.&lt;/li&gt;&lt;/ul&gt;</string>
-    </dict>
-    <key>snf</key>
-    <dict>
-      <key>title</key>
-      <string>SKILLED NURSING FACILITY</string>
-      <key>text</key>
-      <string>&lt;p&gt;A skilled nursing facility helps patients who need a lot of help with simple functions, and who are not yet ready to participate in rehab therapy.&lt;/p&gt;</string>
-    </dict>
-    <key>inpatient-rehabilitation-hospital</key>
-    <dict>
-      <key>title</key>
-      <string>INPATIENT REHAB</string>
-      <key>text</key>
-      <string>&lt;p&gt;An inpatient rehabilitation hospital is for patients who are not ready to be at home but can participate in several hours of rehabilitation therapy every day.&lt;/p&gt;</string>
-    </dict>
-    <key>fast</key>
-    <dict>
-      <key>title</key>
-      <string>FAST</string>
-      <key>imageName</key>
-      <string>FAST</string>
-      <key>text</key>
-      <string>&lt;p&gt;Spot a Stroke FAST:&lt;/p&gt;
-        &lt;ul&gt;&lt;li&gt;Face drooping on one side or numbness.&lt;/li&gt;
-        &lt;li&gt;Arm weakness on one side or drifting down.&lt;/li&gt;
-        &lt;li&gt;Speech slurring or sounding strange.&lt;/li&gt;
-        &lt;li&gt;Time to tell the doctor or nurse immediately!&lt;/li&gt;&lt;/ul&gt;</string>
-    </dict>
-    <key>seizure</key>
-    <dict>
-      <key>audioName</key>
-      <string>seizure</string>
-      <key>title</key>
-      <string>SEIZURE</string>
-      <key>text</key>
-      <string>&lt;p&gt;A seizure occurs when the nerve cells in the brain are firing too much, like an electrical storm. It’s usually sudden and can take many forms from uncontrollable shaking of the entire body to confusion or unconsciousness. Seizures are sometimes called “convulsions,” “fits” or “spells.”&lt;/p&gt;</string>
-    </dict>
-    <key>IV-line</key>
-    <dict>
-      <key>title</key>
-      <string>IV line</string>
-      <key>imageName</key>
-      <string>IV-line</string>
-      <key>text</key>
-      <string>&lt;p&gt;An IV (intravenous) line is a tube that goes into a person’s vein for injecting medicines and fluids.&lt;/p&gt;</string>
-    </dict>
-    <key>fluids</key>
-    <dict>
-      <key>title</key>
-      <string>IV FLUIDS</string>
-      <key>imageName</key>
-      <string>fluids</string>
-      <key>text</key>
-      <string>&lt;p&gt;Fluids are given to balance the body’s water level and ensure the brain gets the blood it needs.&lt;/p&gt;</string>
-    </dict>
-    <key>oxygen</key>
-    <dict>
-      <key>text</key>
-      <string>&lt;p&gt;Oxygen is provided to ensure the brain gets the maximum amount possible.&lt;/p&gt;</string>
-    </dict>
-    <key>EKG-or-ECG</key>
-    <dict>
-      <key>audioName</key>
-      <string>electrocardiogram</string>
-      <key>videoName</key>
-      <string>EKG</string>
-      <key>text</key>
-      <string>&lt;ul&gt;&lt;li&gt;An electrocardiogram or “EKG” or “ECG” is a painless test that translates the electrical activity of the heart into line and prints this on paper.&lt;/li&gt;&lt;li&gt;This information gives clues about the health of the heart.&lt;/li&gt;&lt;/ul&gt;</string>
-    </dict>
-    <key>CT-or-CAT</key>
-    <dict>
-      <key>title</key>
-      <string>CT Scan</string>
-      <key>videoName</key>
-      <string>CT-head</string>
-      <key>text</key>
-      <string>&lt;p&gt;A “cat scan” or CT scan uses X-rays to take pictures of the brain. This might be repeated during the hospital stay if the doctors think it’s important to see pictures of how the stroke is changing.&lt;/p&gt;</string>
-    </dict>
-    <key>hemorrhagic-stroke2</key>
-    <dict>
-      <key>imageName</key>
-      <string>hemorrhagic-stroke</string>
-      <key>audioName</key>
-      <string>hemorrhagic-stroke</string>
-      <key>title</key>
-      <string>HEMORRHAGIC stroke</string>
-      <key>text</key>
-      <string>&lt;ul&gt;&lt;li&gt;This is like when blood vessels break under the skin and there is bruising.&lt;/li&gt;
-        &lt;li&gt;Because the brain is such a sensitive organ, bleeding in the brain is much more serious and life threatening than bleeding under our skin.&lt;/li&gt;
-        &lt;li&gt;When this happens, the part of the brain that doesn&apos;t receive oxygen will get injured and begin to die.&lt;/li&gt;&lt;/ul&gt;</string>
-    </dict>
-    <key>embolus</key>
-    <dict>
-      <key>videoName</key>
-      <string>pRN Embolic(SAMPLE)</string>
-      <key>title</key>
-      <string>CEREBRAL EMBOLISM</string>
-      <key>text</key>
-      <string>&lt;ul&gt;&lt;li&gt;In some cases, arteries near the heart, chest or neck can have clots that break loose and move with the blood flow.&lt;/li&gt;
-        &lt;li&gt;When a clot breaks loose, it is called an &lt;b&gt;embolism&lt;/b&gt;, and it can clog the arteries and block blood from getting to the brain.&lt;/li&gt;&lt;/ul&gt;</string>
-    </dict>
-    <key>blockage</key>
-    <dict>
-      <key>audioName</key>
-      <string>atherosclerosis</string>
-      <key>videoName</key>
-      <string>blockage</string>
-      <key>title</key>
-      <string>ATHEROSCLEROSIS</string>
-      <key>text</key>
-      <string>&lt;ul&gt;&lt;li&gt;A blockage in blood vessels usually happen when it “clogs”.&lt;/li&gt;
-        &lt;li&gt;The blood vessels to the brain are like pipes that carry water. Layers of mold and  “gunk” can build up over many years.&lt;/li&gt;
-        &lt;li&gt;The same kind of build up can happen in a person’s &lt;b&gt;arteries&lt;/b&gt;. Arteries are the blood vessels that carry blood FROM the heart TO the brain.&lt;/li&gt;
-        &lt;li&gt;Similar to the mold or “gunk” that clogs the pipes, there is fat that clogs the arteries. This is called &lt;b&gt;atherosclerosis&lt;/b&gt;.&lt;/li&gt;
-        &lt;li&gt;As the blood flow slows, it eventually clots and stops any more blood from getting to the brain.&lt;/li&gt;&lt;/ul&gt;</string>
-    </dict>
-    <key>ischemic</key>
-    <dict>
-      <key>imageName</key>
-      <string>ischemia-diagram</string>
-      <key>audioName</key>
-      <string>ischemic-stroke</string>
-      <key>title</key>
-      <string>ISCHEMIC stroke</string>
-      <key>text</key>
-      <string>&lt;ui&gt;&lt;li&gt;Blood carries oxygen through our bodies, and we need oxygen to live.&lt;/li&gt;
-        &lt;li&gt;Any part of the body that doesn’t receive oxygen gets injured and begins die. This is called &lt;b&gt;ischemia&lt;/b&gt;.&lt;/li&gt;&lt;/ul&gt;</string>
-    </dict>
-    <key>tpa-benefit</key>
-    <dict>
-      <key>title</key>
-      <string>tPA BENEFIT</string>
-      <key>text</key>
-      <string>&lt;p class=&apos;align-left&apos;&gt;If given promptly, 1 in 3 patients who receive tPA resolve their symptoms or have major improvement in their stroke symptoms.&lt;/p&gt;
-        &lt;p class=&apos;align-left&apos;&gt;&lt;br/&gt;&lt;em class=&apos;smaller&apos;&gt; - The Stroke Collaborative (American Academy of Neurology, American College of Emergency Physicians, American Heart Association &amp; American Stroke Association)&lt;/em&gt;&lt;/p&gt;</string>
-    </dict>
-    <key>tpa-risk</key>
-    <dict>
-      <key>title</key>
-      <string>tPA RISK</string>
-      <key>text</key>
-      <string>&lt;p class=&apos;align-left&apos;&gt;In 6 out of 100 patients, bleeding may occur in the brain and cause further injury.  For 1 of these 6 patients it may cause death or long term disability.&lt;/p&gt;
-        &lt;p class=&apos;align-left&apos;&gt;&lt;br/&gt;&lt;i class=&apos;smaller&apos;&gt;- The Stroke Collaborative (American Academy of Neurology, American College of Emergency Physicians, American Heart Association &amp; American Stroke Association)&lt;/i&gt;&lt;/p&gt;</string>
-    </dict>
-    <key>hemorrhagic-stroke</key>
-    <dict>
-      <key>imageName</key>
-      <string>hemorrhagic-stroke</string>
-      <key>title</key>
-      <string>HEMORRHAGIC stroke</string>
-      <key>audioName</key>
-      <string>hemorrhagic-stroke</string>
-      <key>text</key>
-      <string>&lt;ul clas=&apos;for-definition-modal&apos;&gt;
-        &lt;li&gt;The heart pumps blood to the brain for it to work properly.  Blood needs to move easily through blood vessels.&lt;/li&gt;
-        &lt;li&gt;A hemorrhagic stroke happens when one of the blood vessels in the brain cracks open and leaks blood in the brain.&lt;/li&gt;
-        &lt;li&gt;When this happens, that part of the brain that doesn’t receive blood gets injured and begins to die.&lt;/li&gt;
-        &lt;li&gt;A stroke is sometimes called a brain attack because it’s similar to what happens in a heart attack.&lt;/li&gt;
-        &lt;/ul&gt;</string>
-    </dict>
-  </dict>
+	<dict>
+		<key>change-in-behavior-or-level-of-consciousness</key>
+		<dict>
+			<key>title</key>
+			<string>CHANGE IN BEHAVIOR OR LEVEL OF CONSCIOUSNESS</string>
+			<key>text</key>
+			<string>&lt;p&gt;A major or sudden change in behavior or level of consciousness after stroke may be caused by side effects from such medications as pain pills or sleeping pills, second stroke, seizures, or infection.&lt;/p&gt;</string>
+		</dict>
+		<key>pe</key>
+		<dict>
+			<key>title</key>
+			<string>PULMONARY EMBOLISM (PE)</string>
+			<key>text</key>
+			<string>&lt;p&gt;Pulmonary embolism is when part of a blood clot that forms in the veins, usually the leg veins, also known as “deep venous thrombosis (DVT),” breaks off and floats to the lungs.&lt;/p&gt;</string>
+		</dict>
+		<key>dvt</key>
+		<dict>
+			<key>title</key>
+			<string>DEEP VENOUS THROMBOSIS (DVT)</string>
+			<key>text</key>
+			<string>&lt;p&gt;Deep venous thrombosis is a blood clot that forms in the veins, usually in the leg veins.&lt;/p&gt;</string>
+		</dict>
+		<key>uti</key>
+		<dict>
+			<key>title</key>
+			<string>URINARY TRACT INFECTION (UTI)</string>
+			<key>text</key>
+			<string>&lt;p&gt;A urinary tract infection is an infection of the path or &quot;tract&quot; that urine follows inside the body, from the kidney, where urine is made, to the bladder, where urine is stored until a person urinates it out.&lt;/p&gt;</string>
+			<key>ventilator</key>
+		</dict>
+		<dict>
+			<key>imageName</key>
+			<string>vent</string>
+			<key>title</key>
+			<string>MECHANICAL VENTILATION</string>
+			<key>text</key>
+			<string>&lt;p&gt; A ventilator is a machine that helps a patient to breathe. Patients are usually placed on “mechanical ventilation” because of a medical problem that makes it hard for them to breathe well on their own. While on the ventilator, the body is able to rest so that it can heal.
+				The ventilator will alert the staff of any problems or changes in the patient’s condition. Usually when an alarm sounds, there is no great cause for concern. Sometimes the problem corrects itself &amp; other times an ICU staff may come to check the alarm. The ICU staff are highly trained professionals &amp; capable of handling all alarms. &lt;b&gt;Please do not ever turn off an alarm, move the ventilator or touch its screen, buttons, or tubes.&lt;/b&gt;&lt;/p&gt;</string>
+		</dict>
+		<key>level-of-consciousness</key>
+		<dict>
+			<key>title</key>
+			<string>ALTERED LEVEL OF CONSCIOUSNESS</string>
+			<key>text</key>
+			<string>&lt;p&gt;Any injury to the brain will make a person less alert.  A major or sudden change in behavior or level of consciousness &lt;b&gt;AFTER&lt;/b&gt; stroke may also be caused by side effects from such medications as pain pills or sleeping pills, second stroke, seizures, or infection.&lt;/p&gt;</string>
+		</dict>
+		<key>mri</key>
+		<dict>
+			<key>imageName</key>
+			<string>mri</string>
+			<key>title</key>
+			<string>MRI</string>
+			<key>text</key>
+			<string>&lt;p&gt;An MRI is like a CT scan, but uses magnets instead of X-rays to take pictures. It can sometimes show early damage or swelling in the brain.  It’s a safe &amp; painless test that requires laying still on a bed that slides into a &quot;tunnel&quot;. These procedures usually take 15-45 minutes.&lt;/p&gt;</string>
+		</dict>
+		<key>feeding-tube</key>
+		<dict>
+			<key>imageName</key>
+			<string>NGT</string>
+			<key>title</key>
+			<string>NG TUBE</string>
+			<key>text</key>
+			<string>&lt;p&gt; The feeding tube or nasogastric tube (NG-tube for short) may be used if stroke has weakened the muscles that prevent food and liquid from entering the windpipe and lungs during swallowing, which puts the patient at risk for pneumonia.&lt;/p&gt;&lt;p&gt; If it will be a while before eating by mouth is safe, the NG tube will be replaced with a gastrostomy tube (G-tube) placed through the stomach wall.&lt;/p&gt;</string>
+		</dict>
+		<key>breathing-tube</key>
+		<dict>
+			<key>imageName</key>
+			<string>ETT</string>
+			<key>title</key>
+			<string>ET TUBE</string>
+			<key>text</key>
+			<string>&lt;p&gt;The breathing tube or endotracheal tube (ET-tube for short), is placed in the nose or mouth and into the windpipe to keep the airway open and help the patient breathe. Those who need longer-term breathing assistance may have a tracheostomy tube place through the neck and into the windpipe.&lt;/p&gt;</string>
+		</dict>
+		<key>pulse-oximeter</key>
+		<dict>
+			<key>imageName</key>
+			<string>pulse</string>
+			<key>title</key>
+			<string>PULSE OXIMETER</string>
+			<key>text</key>
+			<string>&lt;p&gt;The &quot;pulse ox&quot;, or pulse oximeter is usually attached to the finger or ear and continuously shows the amount of oxygen in the blood.&lt;/p&gt;</string>
+		</dict>
+		<key>high-blood-pressure</key>
+		<dict>
+			<key>audioName</key>
+			<string>hypertension</string>
+			<key>imageName</key>
+			<string>hypertension</string>
+			<key>title</key>
+			<string>HYPERTENSION</string>
+			<key>text</key>
+			<string>&lt;ul&gt;&lt;li&gt;Hypertension is high blood pressure against artery walls. &lt;/li&gt;&lt;li&gt;Hypertension can be present for many years without symptoms and the high blood pressure begins to slowly damage the blood vessels and the heart.&lt;/li&gt;&lt;li&gt;High blood pressure is called the &quot;silent killer&quot; because it damages without symptoms over a long period of time until there is serious illness in many parts of the body.&lt;/li&gt;&lt;/ul&gt;</string>
+		</dict>
+		<key>monitors</key>
+		<dict>
+			<key>videoName</key>
+			<string>monitors</string>
+			<key>title</key>
+			<string>PATIENT MONITOR</string>
+			<key>text</key>
+			<string>&lt;p&gt;Monitors are used to continuously measure vital signs. In this video example, the first number from top shows a heart rate (HR) of 60 bpm, or beats per minute. The next number is 98%, which is the oxygen level in the blood. The following number 30 shows the number of breaths in one minute, or respirations per minute (rpm). Last is the blood pressure that is 121/75.&lt;/p&gt;</string>
+		</dict>
+		<key>brainstem</key>
+		<dict>
+			<key>imageName</key>
+			<string>brainstem</string>
+			<key>title</key>
+			<string>BRAIN STEM</string>
+			<key>text</key>
+			<string>&lt;p&gt;This area of the brain is responsible for movement and life-preserving reflexes. There may be problems with breathing, swallowing, consciousness, and limb weakness.&lt;/p&gt;</string>
+		</dict>
+		<key>cerebellum</key>
+		<dict>
+			<key>imageName</key>
+			<string>cerebellum</string>
+			<key>title</key>
+			<string>CEREBELLUM</string>
+			<key>text</key>
+			<string>&lt;p&gt;This area of the brain is responsible for coordination and balance. There may be problems with walking, sitting up or dizziness.&lt;/p&gt;</string>
+		</dict>
+		<key>right-occipital</key>
+		<dict>
+			<key>imageName</key>
+			<string>occipital-lobe</string>
+			<key>title</key>
+			<string>RIGHT OCCIPITAL LOBE</string>
+			<key>text</key>
+			<string>&lt;p&gt;This area of the brain is responsible for vision. There may be problems with partial blindness on the left or other problems with vision or moving the eyes.&lt;/p&gt;</string>
+		</dict>
+		<key>left-occipital</key>
+		<dict>
+			<key>imageName</key>
+			<string>occipital-lobe</string>
+			<key>title</key>
+			<string>LEFT OCCIPITAL LOBE</string>
+			<key>text</key>
+			<string>&lt;p&gt;This area of the brain is responsible for vision. There may be problems with partial blindness on the right or other problems with vision or moving the eyes.&lt;/p&gt;</string>
+		</dict>
+		<key>right-parietal</key>
+		<dict>
+			<key>imageName</key>
+			<string>parietal-lobe</string>
+			<key>title</key>
+			<string>RIGHT PARIETAL LOBE</string>
+			<key>text</key>
+			<string>&lt;p&gt;This area of the brain is responsible for vision, attention and sensation. There may be problems with partial blindness, numbness on the left side of the face or body, and/or ignoring or “neglecting” the left side of the world. &lt;/p&gt;</string>
+		</dict>
+		<key>left-parietal</key>
+		<dict>
+			<key>imageName</key>
+			<string>parietal-lobe</string>
+			<key>title</key>
+			<string>LEFT PARIETAL LOBE</string>
+			<key>text</key>
+			<string>&lt;p&gt;This area of the brain is responsible for language, thought and sensation. There may be problems with speaking, logic and numbness on the right side of the face or body.&lt;/p&gt;</string>
+		</dict>
+		<key>right-temporal</key>
+		<dict>
+			<key>imageName</key>
+			<string>temporal-lobe</string>
+			<key>title</key>
+			<string>RIGHT TEMPORAL LOBE</string>
+			<key>text</key>
+			<string>&lt;p&gt;This area of the brain is responsible for personality and thought. There may be problems with memory and confusion or very unusual behavior. &lt;/p&gt;</string>
+		</dict>
+		<key>left-temporal</key>
+		<dict>
+			<key>imageName</key>
+			<string>temporal-lobe</string>
+			<key>title</key>
+			<string>LEFT TEMPORAL LOBE</string>
+			<key>text</key>
+			<string>&lt;p&gt;This area of the brain is responsible for language and thought. There may be problems with speaking, reading or understanding language as well as confusion or very unusual behavior.&lt;/p&gt;</string>
+		</dict>
+		<key>right-frontal</key>
+		<dict>
+			<key>imageName</key>
+			<string>frontal-lobe</string>
+			<key>title</key>
+			<string>RIGHT FRONTAL LOBE</string>
+			<key>text</key>
+			<string>&lt;p&gt;This area of the brain is responsible for movement, speech, emotion, attention, and spatial awareness. There may be problems with speaking, confusion, mood swings, weakness of the face or body, and/or ignoring or “neglecting” the left side of the world.&lt;/p&gt;</string>
+		</dict>
+		<key>left-frontal</key>
+		<dict>
+			<key>imageName</key>
+			<string>frontal-lobe</string>
+			<key>title</key>
+			<string>LEFT FRONTAL LOBE</string>
+			<key>text</key>
+			<string>&lt;p&gt;This area of the brain is responsible for movement, speech, emotion, and attention. There may be problems with speaking, confusion, mood swings and/or weakness on the right side of the face or body.&lt;/p&gt;</string>
+		</dict>
+		<key>brain</key>
+		<dict>
+			<key>title</key>
+			<string>BRAIN</string>
+			<key>videoName</key>
+			<string>3D-Brain</string>
+			<key>text</key>
+			<string>&lt;p&gt;The brain is the most complex part of our body. The brain is divided into a right and left half. Tap PLAY to see a 3D tour of the brain. Each of the lobes will be shown in a different color and will light up in the following order:&lt;/p&gt;
+				&lt;ol&gt;
+				&lt;table&gt;
+				&lt;tr&gt;
+				&lt;th&gt;
+				&lt;li class=&quot;red&quot;&gt;&lt;b&gt;Right and Left FRONTAL Lobe&lt;/b&gt;&lt;/li&gt;
+				&lt;li class=&quot;dark-blue&quot;&gt;&lt;b&gt;Right and Left TEMPORAL Lobe&lt;/b&gt;&lt;/li&gt;
+				&lt;li class=&quot;brown&quot;&gt;&lt;b&gt;CEREBELLUM&lt;/b&gt;&lt;/li&gt;
+				&lt;/&gt;
+				&lt;th&gt;
+				&lt;li class=&quot;orange&quot;&gt;&lt;b&gt;Right and Left OCCIPITAL Lobe&lt;/b&gt;&lt;/li&gt;
+				&lt;li class=&quot;green&quot;&gt;&lt;b&gt;Right and Left PARIETAL Lobe&lt;/b&gt;&lt;/li&gt;
+				&lt;li class=&quot;yellow&quot;&gt;&lt;b&gt;BRAINSTEM&lt;/b&gt;&lt;/li&gt;
+				&lt;/th&gt;
+				&lt;/tr&gt;
+				&lt;/table&gt;
+				&lt;/ol&gt;
+			</string>
+		</dict>
+		<key>angiography</key>
+		<dict>
+			<key>imageName</key>
+			<string>angiography</string>
+			<key>videoName</key>
+			<string>angiography</string>
+			<key>title</key>
+			<string>ANGIOGRAPHY</string>
+			<key>text</key>
+			<string>&lt;p&gt;Angiography is when a &lt;b&gt;catheter&lt;/b&gt; (a long, thin, hollow tube) is used to inject dye into a person’s blood vessels to make them more visible on X-ray. Angiograms are done with a CT scan, X-ray or MRI.&lt;/p&gt;</string>
+		</dict>
+		<key>diabetes</key>
+		<dict>
+			<key>audioName</key>
+			<string>diabetes</string>
+			<key>title</key>
+			<string>DIABETES MELLITUS </string>
+			<key>text</key>
+			<string>&lt;p&gt;Diabetes is a disease characterized by high blood glucose or “blood sugar.” This happens when the body doesn&apos;t make enough insulin — the hormone that turns the sugar we eat into energy, doesn&apos;t respond properly to insulin, or both. Symptoms of high blood sugar include frequent urination or “polyuria,” increased thirst or “polydipsia” and increased hunger or “polyphagia.”&lt;/p&gt;</string>
+		</dict>
+		<key>carotid-endarterectomy</key>
+		<dict>
+			<key>imageName</key>
+			<string>carotid-artery-surgery</string>
+			<key>title</key>
+			<string>ENDARTERECTOMY</string>
+			<key>text</key>
+			<string>&lt;p&gt;&lt;b&gt;Carotid endarterectomy&lt;/b&gt; the plaque that has built up on the inside of the artery is taken out by performing a small surgery. A small cut is made in the side of the neck, which allows the surgeon to get to the carotid artery, open the artery and take out the fat.&lt;/p&gt;</string>
+		</dict>
+		<key>angioplasty-and-stenting</key>
+		<dict>
+			<key>audioName</key>
+			<string>angioplasty-stenting</string>
+			<key>videoName</key>
+			<string>angioplasty-stent</string>
+			<key>title</key>
+			<string>ANGIOPLASTY &amp; STENTING</string>
+			<key>text</key>
+			<string>&lt;ul&gt;&lt;li&gt;Carotid &lt;b&gt;angioplasty&lt;/b&gt; is a type of endovascular procedure where doctors try to remove a blood clot by passing a catheter (a long, thin, hollow tube) to the site of the blocked blood vessel in the brain. In some situations, a tiny balloon is inflated inside a blocked blood vessel.&lt;/li&gt;
+				&lt;li&gt;&lt;b&gt;Stenting&lt;/b&gt; is when a steel screen or “stent” is placed inside the blood vessel to help keep it open and decrease the chance of another blockage.&lt;/li&gt;&lt;/ul&gt;</string>
+		</dict>
+		<key>endovascular-procedures</key>
+		<dict>
+			<key>title</key>
+			<string>ENDOVASCULAR PROCEDURE</string>
+			<key>text</key>
+			<string>&lt;ul&gt;&lt;li&gt;&lt;b&gt;Endovascular&lt;/b&gt; means “inside the blood vessel”, so an endovascular procedure is a small surgery where doctors will use instruments to remove the plaque buildup in the carotid arteries.&lt;/li&gt;
+				&lt;li&gt;The two carotid arteries are important blood vessels because they are the main supply of oxygen to the brain. The pulse you feel on your neck is blood moving through the carotid arteries.&lt;/li&gt;&lt;/ul&gt;</string>
+		</dict>
+		<key>tPA</key>
+		<dict>
+			<key>title</key>
+			<string>tPA</string>
+			<key>text</key>
+			<string>&lt;p&gt;tPA is short for &lt;b&gt;tissue plasminogen activator&lt;/b&gt;, a medicine injected into the body to dissolve blood clots and reopen blocked blood vessels to the brain.&lt;/p&gt;</string>
+		</dict>
+		<key>blood-cell-counts</key>
+		<dict>
+			<key>title</key>
+			<string>CBC</string>
+			<key>text</key>
+			<string>&lt;p class=&quot;def-paraghraph&quot;&gt;A &lt;b&gt;CBC&lt;/b&gt;, or complete blood count, is a lab test that checks the 3 types of blood cells.  Each one have a special purpose:&lt;/p&gt;
+				&lt;ul&gt;&lt;li&gt;&lt;b&gt;Red blood cells (RBC)&lt;/b&gt;: Our body needs oxygen to work properly. Red blood cells carry oxygen to every part of the body and travel through many different blood vessels.&lt;/li&gt;
+				&lt;li&gt;&lt;b&gt;White blood cells (WBC)&lt;/b&gt; fight infection.&lt;/li&gt;
+				&lt;li&gt;&lt;b&gt;Platelets&lt;/b&gt; help control bleeding.  If platelets are low, you may bruise easily, or it may take much longer than others for your bleeding to stop.&lt;/li&gt;&lt;/ul&gt;</string>
+		</dict>
+		<key>ischemic-stroke</key>
+		<dict>
+			<key>title</key>
+			<string>ISCHEMIC stroke</string>
+			<key>videoName</key>
+			<string>Ischemic Stroke-patient setup(INTRO)(SAMPLE)</string>
+			<key>audioName</key>
+			<string>ischemic-stroke</string>
+			<key>text</key>
+			<string>&lt;ul class=&apos;for-definition-modal&apos;&gt;&lt;li&gt;The heart pumps blood to the brain for it to work properly.  Blood needs to
+				move easily though blood vessels. &lt;/li&gt;
+				&lt;li&gt;An ischemic stroke happens when a part of the brain doesn&apos;t receive the blood that it needs because of a blockage in any one of these blood vessels&lt;/li&gt;
+				&lt;li&gt;When this happens, that part of the brain that doesn’t receive blood gets injured and begins to die.&lt;/li&gt;
+				&lt;li&gt;A stroke is sometimes called a brain attack because it’s similar to what
+				happens in a heart attack.&lt;/li&gt;&lt;/ul&gt;</string>
+		</dict>
+		<key>eeg</key>
+		<dict>
+			<key>imageName</key>
+			<string>EEG</string>
+			<key>title</key>
+			<string>EEG</string>
+			<key>text</key>
+			<string>&lt;p&gt;An EEG records the electrical signals of the brain, similar to how an EKG records the electrical signals of the heart. This is very safe and can provide insight the health of the brain. It is usually used to detect seizures&lt;/p&gt;</string>
+		</dict>
+		<key>national-institutes-of-health-stroke-scale</key>
+		<dict>
+			<key>title</key>
+			<string>NIH STROKE SCALE</string>
+			<key>text</key>
+			<string>&lt;p&gt;The National Institute of Health Stroke Scale (NIHSS) is a tool used by doctors to measure how much damage a stroke has caused. Research suggests it may also be used to predict recovery and survival after stroke.&lt;/p&gt;</string>
+		</dict>
+		<key>blood-clots-in-the-legs</key>
+		<dict>
+			<key>videoName</key>
+			<string>dvt-video</string>
+			<key>audioName</key>
+			<string>dvt-audio</string>
+			<key>title</key>
+			<string>DEEP VENOUS THROMBOSIS DEEP VENOUS THROMBOSIS</string>
+			<key>text</key>
+			<string>&lt;p&gt;Deep venous thrombosis or “DVT” is a blood clot that usually forms the leg veins. Some people with stroke are at higher risk for these blood clots.&lt;/p&gt;</string>
+		</dict>
+		<key>delirium</key>
+		<dict>
+			<key>title</key>
+			<string>DELERIUM</string>
+			<key>text</key>
+			<string>&lt;p&gt;Delirium is a sudden change in a person’s mental state. It can result in sudden confusion, sleepiness, extreme agitation, and sometimes hallucinations.&lt;/p&gt;</string>
+		</dict>
+		<key>stomach-ulcers</key>
+		<dict>
+			<key>title</key>
+			<string>STOMACH ULCER or PEPTIC ULCER DISEASE (PUD)</string>
+			<key>text</key>
+			<string>&lt;p&gt;The stress of stroke and hospitalization may cause the stomach to release too much acid or “juice.” Normal amounts of digestive juice is necessary to break down food but too much can also break down the lining of the stomach resulting in a sore or “ulcer.&quot;&lt;/p&gt;</string>
+		</dict>
+		<key>bleeding</key>
+		<dict>
+			<key>title</key>
+			<string>BLEEDING DISORDER</string>
+			<key>text</key>
+			<string>&lt;p&gt;Serious illnesses such as a stroke can decrease the blood’s ability to clot. This may cause excessive bleeding when areas of the body are poked to draw blood or insert tubes or IVs.&lt;/p&gt;</string>
+		</dict>
+		<key>infections</key>
+		<dict>
+			<key>title</key>
+			<string>INFECTION</string>
+			<key>text</key>
+			<string>&lt;p&gt;Stroke weakens the immune system and can increase the chances of infection. Infections may be caused by not being able to keep one’s own spit out of his or her lungs, breathing tubes, IVs, tubes to help collect urine, and other tubes and catheters.&lt;/p&gt;</string>
+		</dict>
+		<key>swelling-in-the-brain</key>
+		<dict>
+			<key>title</key>
+			<string>BRAIN SWELLING or INTRACRANIAL HYPERTENSION</string>
+			<key>text</key>
+			<string>&lt;p&gt;A certain amount of swelling after stroke is a normal part of healing, similar to what happens after an ankle sprain. Too much swelling can put a lot of pressure on the brain. If the doctors are worried that the brain pressure is too high, they may repeat a CT or MRI, or a small hole may be drilled into the skull to lower the pressure. Pressure can then be measured and controlled.&lt;/p&gt;</string>
+		</dict>
+		<key>heart-attack</key>
+		<dict>
+			<key>videoName</key>
+			<string>heart-attack</string>
+			<key>title</key>
+			<string>HEART ATTACK or MYOCARDIAL INFARCTION (MI)</string>
+			<key>text</key>
+			<string>&lt;ul&gt;&lt;li&gt;A heart attack happens when a part of the heart doesn&apos;t receive the blood and oxygen it needs, becomes injured and starts to die.&lt;/li&gt;&lt;li&gt;A heart attack can happen after heart disease has developed.&lt;/li&gt;&lt;li&gt;The risk factors that lead to heart disease and heart attack are very similar to those leading to stroke.&lt;/li&gt;&lt;/ul&gt;</string>
+		</dict>
+		<key>doctors</key>
+		<dict>
+			<key>title</key>
+			<string>TYPES OF DOCTORS</string>
+			<key>text</key>
+			<string>&lt;p&gt;Doctors may include one or more of the following:&lt;/p&gt;
+				&lt;ul&gt;&lt;table&gt;&lt;th&gt;&lt;li&gt;intensivist&lt;/li&gt;&lt;li&gt;neurologist&lt;/li&gt;&lt;li&gt;cardiologist&lt;/li&gt;&lt;li&gt;pulmonologist&lt;/li&gt;&lt;/th&gt;&lt;th&gt;&lt;li&gt;neurosurgeon&lt;/li&gt;&lt;li&gt;internist&lt;/li&gt;&lt;li&gt;resident&lt;/li&gt;&lt;li&gt;medical Student&lt;/li&gt;&lt;/th&gt;&lt;/table&gt;&lt;/ul&gt;</string>
+		</dict>
+		<key>blood-pressure</key>
+		<dict>
+			<key>videoName</key>
+			<string>blood-pressure</string>
+			<key>title</key>
+			<string>SYSTOLIC &amp; DIASTOLIC BLOOD PRESSURE</string>
+			<key>text</key>
+			<string>&lt;p&gt;Blood pressure is the force placed inside the blood vessels as the heart pumps blood. Blood pressure has two numbers:&lt;/p&gt;
+				&lt;ul&gt;&lt;li&gt;The first number &lt;b&gt;(systolic)&lt;/b&gt; shows the pressure as blood leaves the heart.&lt;/li&gt;
+				&lt;li&gt;The second number &lt;b&gt;(diastolic)&lt;/b&gt; shows the pressure as blood returns to the heart.&lt;/li&gt;&lt;/ul&gt;</string>
+		</dict>
+		<key>snf</key>
+		<dict>
+			<key>title</key>
+			<string>SKILLED NURSING FACILITY</string>
+			<key>text</key>
+			<string>&lt;p&gt;A skilled nursing facility helps patients who need a lot of help with simple functions, and who are not yet ready to participate in rehab therapy.&lt;/p&gt;</string>
+		</dict>
+		<key>inpatient-rehabilitation-hospital</key>
+		<dict>
+			<key>title</key>
+			<string>INPATIENT REHAB</string>
+			<key>text</key>
+			<string>&lt;p&gt;An inpatient rehabilitation hospital is for patients who are not ready to be at home but can participate in several hours of rehabilitation therapy every day.&lt;/p&gt;</string>
+		</dict>
+		<key>fast</key>
+		<dict>
+			<key>title</key>
+			<string>FAST</string>
+			<key>imageName</key>
+			<string>FAST</string>
+			<key>text</key>
+			<string>&lt;p&gt;Spot a Stroke FAST:&lt;/p&gt;
+				&lt;ul&gt;&lt;li&gt;Face drooping on one side or numbness.&lt;/li&gt;
+				&lt;li&gt;Arm weakness on one side or drifting down.&lt;/li&gt;
+				&lt;li&gt;Speech slurring or sounding strange.&lt;/li&gt;
+				&lt;li&gt;Time to tell the doctor or nurse immediately!&lt;/li&gt;&lt;/ul&gt;</string>
+		</dict>
+		<key>seizure</key>
+		<dict>
+			<key>audioName</key>
+			<string>seizure</string>
+			<key>title</key>
+			<string>SEIZURE</string>
+			<key>text</key>
+			<string>&lt;p&gt;A seizure occurs when the nerve cells in the brain are firing too much, like an electrical storm. It’s usually sudden and can take many forms from uncontrollable shaking of the entire body to confusion or unconsciousness. Seizures are sometimes called “convulsions,” “fits” or “spells.”&lt;/p&gt;</string>
+		</dict>
+		<key>IV-line</key>
+		<dict>
+			<key>title</key>
+			<string>IV line</string>
+			<key>imageName</key>
+			<string>IV-line</string>
+			<key>text</key>
+			<string>&lt;p&gt;An IV (intravenous) line is a tube that goes into a person’s vein for injecting medicines and fluids.&lt;/p&gt;</string>
+		</dict>
+		<key>fluids</key>
+		<dict>
+			<key>title</key>
+			<string>IV FLUIDS</string>
+			<key>imageName</key>
+			<string>fluids</string>
+			<key>text</key>
+			<string>&lt;p&gt;Fluids are given to balance the body’s water level and ensure the brain gets the blood it needs.&lt;/p&gt;</string>
+		</dict>
+		<key>oxygen</key>
+		<dict>
+			<key>text</key>
+			<string>&lt;p&gt;Oxygen is provided to ensure the brain gets the maximum amount possible.&lt;/p&gt;</string>
+		</dict>
+		<key>EKG-or-ECG</key>
+		<dict>
+			<key>audioName</key>
+			<string>electrocardiogram</string>
+			<key>videoName</key>
+			<string>EKG</string>
+			<key>text</key>
+			<string>&lt;ul&gt;&lt;li&gt;An electrocardiogram or “EKG” or “ECG” is a painless test that translates the electrical activity of the heart into line and prints this on paper.&lt;/li&gt;&lt;li&gt;This information gives clues about the health of the heart.&lt;/li&gt;&lt;/ul&gt;</string>
+		</dict>
+		<key>CT-or-CAT</key>
+		<dict>
+			<key>title</key>
+			<string>CT Scan</string>
+			<key>videoName</key>
+			<string>CT-head</string>
+			<key>text</key>
+			<string>&lt;p&gt;A “cat scan” or CT scan uses X-rays to take pictures of the brain. This might be repeated during the hospital stay if the doctors think it’s important to see pictures of how the stroke is changing.&lt;/p&gt;</string>
+		</dict>
+		<key>hemorrhagic-stroke2</key>
+		<dict>
+			<key>imageName</key>
+			<string>hemorrhagic-stroke</string>
+			<key>audioName</key>
+			<string>hemorrhagic-stroke</string>
+			<key>title</key>
+			<string>HEMORRHAGIC stroke</string>
+			<key>text</key>
+			<string>&lt;ul&gt;&lt;li&gt;This is like when blood vessels break under the skin and there is bruising.&lt;/li&gt;
+				&lt;li&gt;Because the brain is such a sensitive organ, bleeding in the brain is much more serious and life threatening than bleeding under our skin.&lt;/li&gt;
+				&lt;li&gt;When this happens, the part of the brain that doesn&apos;t receive oxygen will get injured and begin to die.&lt;/li&gt;&lt;/ul&gt;</string>
+		</dict>
+		<key>embolus</key>
+		<dict>
+			<key>videoName</key>
+			<string>pRN Embolic(SAMPLE)</string>
+			<key>title</key>
+			<string>CEREBRAL EMBOLISM</string>
+			<key>text</key>
+			<string>&lt;ul&gt;&lt;li&gt;In some cases, arteries near the heart, chest or neck can have clots that break loose and move with the blood flow.&lt;/li&gt;
+				&lt;li&gt;When a clot breaks loose, it is called an &lt;b&gt;embolism&lt;/b&gt;, and it can clog the arteries and block blood from getting to the brain.&lt;/li&gt;&lt;/ul&gt;</string>
+		</dict>
+		<key>blockage</key>
+		<dict>
+			<key>audioName</key>
+			<string>atherosclerosis</string>
+			<key>videoName</key>
+			<string>blockage</string>
+			<key>title</key>
+			<string>ATHEROSCLEROSIS</string>
+			<key>text</key>
+			<string>&lt;ul&gt;&lt;li&gt;A blockage in blood vessels usually happen when it “clogs”.&lt;/li&gt;
+				&lt;li&gt;The blood vessels to the brain are like pipes that carry water. Layers of mold and  “gunk” can build up over many years.&lt;/li&gt;
+				&lt;li&gt;The same kind of build up can happen in a person’s &lt;b&gt;arteries&lt;/b&gt;. Arteries are the blood vessels that carry blood FROM the heart TO the brain.&lt;/li&gt;
+				&lt;li&gt;Similar to the mold or “gunk” that clogs the pipes, there is fat that clogs the arteries. This is called &lt;b&gt;atherosclerosis&lt;/b&gt;.&lt;/li&gt;
+				&lt;li&gt;As the blood flow slows, it eventually clots and stops any more blood from getting to the brain.&lt;/li&gt;&lt;/ul&gt;</string>
+		</dict>
+		<key>ischemic</key>
+		<dict>
+			<key>imageName</key>
+			<string>ischemia-diagram</string>
+			<key>audioName</key>
+			<string>ischemic-stroke</string>
+			<key>title</key>
+			<string>ISCHEMIC stroke</string>
+			<key>text</key>
+			<string>&lt;ui&gt;&lt;li&gt;Blood carries oxygen through our bodies, and we need oxygen to live.&lt;/li&gt;
+				&lt;li&gt;Any part of the body that doesn’t receive oxygen gets injured and begins die. This is called &lt;b&gt;ischemia&lt;/b&gt;.&lt;/li&gt;&lt;/ul&gt;</string>
+		</dict>
+		<key>tpa-benefit</key>
+		<dict>
+			<key>title</key>
+			<string>tPA BENEFIT</string>
+			<key>text</key>
+			<string>&lt;p class=&apos;align-left&apos;&gt;If given promptly, 1 in 3 patients who receive tPA resolve their symptoms or have major improvement in their stroke symptoms.&lt;/p&gt;
+				&lt;p class=&apos;align-left&apos;&gt;&lt;br/&gt;&lt;em class=&apos;smaller&apos;&gt; - The Stroke Collaborative (American Academy of Neurology, American College of Emergency Physicians, American Heart Association &amp; American Stroke Association)&lt;/em&gt;&lt;/p&gt;</string>
+		</dict>
+		<key>tpa-risk</key>
+		<dict>
+			<key>title</key>
+			<string>tPA RISK</string>
+			<key>text</key>
+			<string>&lt;p class=&apos;align-left&apos;&gt;In 6 out of 100 patients, bleeding may occur in the brain and cause further injury.  For 1 of these 6 patients it may cause death or long term disability.&lt;/p&gt;
+				&lt;p class=&apos;align-left&apos;&gt;&lt;br/&gt;&lt;i class=&apos;smaller&apos;&gt;- The Stroke Collaborative (American Academy of Neurology, American College of Emergency Physicians, American Heart Association &amp; American Stroke Association)&lt;/i&gt;&lt;/p&gt;</string>
+		</dict>
+		<key>hemorrhagic-stroke</key>
+		<dict>
+			<key>imageName</key>
+			<string>hemorrhagic-stroke</string>
+			<key>title</key>
+			<string>HEMORRHAGIC stroke</string>
+			<key>audioName</key>
+			<string>hemorrhagic-stroke</string>
+			<key>text</key>
+			<string>&lt;ul clas=&apos;for-definition-modal&apos;&gt;
+				&lt;li&gt;The heart pumps blood to the brain for it to work properly.  Blood needs to move easily through blood vessels.&lt;/li&gt;
+				&lt;li&gt;A hemorrhagic stroke happens when one of the blood vessels in the brain cracks open and leaks blood in the brain.&lt;/li&gt;
+				&lt;li&gt;When this happens, that part of the brain that doesn’t receive blood gets injured and begins to die.&lt;/li&gt;
+				&lt;li&gt;A stroke is sometimes called a brain attack because it’s similar to what happens in a heart attack.&lt;/li&gt;
+				&lt;/ul&gt;</string>
+		</dict>
+	</dict>
 </plist>

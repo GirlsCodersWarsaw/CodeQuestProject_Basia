@@ -13,25 +13,21 @@ class InvitationsController < ApplicationController
 			InvitationMailer.confirmation_email(@invitation).deliver
 			redirect_to users_path
 		else
-	    	flash[:alert] = "something is wrong :/"
-	    	redirect_to users_path
-	  end
+				flash[:alert] = "something is wrong :/ Probably you used wrong email address. Try again"
+				redirect_to users_path
+		end
 	end
 
 	def destroy
 		@invitation = Invitation.find(params[:id])
 
-		if @invitation.destroy
+		@invitation.destroy
 			flash[:notice] = "Invitation deleted"
-			redirect_to users_url
-		else
-			flash[:alert] = "something is wrong :/"
-			redirect_to users_url
-	  end
-  end
+			redirect_to users_path
+	end
 
 	def confirm_invitation
-		@invitation = Invitation.find_by_id(params[:id])
+		@invitation = Invitation.find_by(id: params[:id])
 		if @invitation
 			@user = User.new do |user|
 				user.first_name = "first_name"
@@ -52,12 +48,12 @@ class InvitationsController < ApplicationController
 			flash[:alert] = "your invitation is out of date"
 			redirect_to root_url
 		end
-  end 
+	end 
 
 	private
 
-	  def invitation_params
-	    params.require(:invitation).permit(:sender_id, :recipient_email, :accepted)
-	  end
+		def invitation_params
+			params.require(:invitation).permit(:sender_id, :recipient_email, :accepted)
+		end
 
 end

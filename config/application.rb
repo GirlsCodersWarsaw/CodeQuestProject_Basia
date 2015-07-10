@@ -14,11 +14,11 @@ require "sprockets/railtie"
 Bundler.require(*Rails.groups)
 
 module BasiaProjectTracking
-  class Application < Rails::Application
-    
-    config.generators do |g|
-      g.template_engine :slim
-    end
-    
-  end
+	class Application < Rails::Application
+		
+		config.generators do |g|
+			g.template_engine :slim
+		end
+		
+	end
 end
