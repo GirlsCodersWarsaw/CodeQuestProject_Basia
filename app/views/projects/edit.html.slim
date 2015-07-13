@@ -1,17 +1,17 @@
 h1
-	| Edit Project:
+  | Edit Project:
 
 = render "form"
 
 div#project-members
-	| project members:
+  | project members:
 p
-	- @project.users.each do |p|
-		= p.email
-		br/
+  - @project.users.each do |p|
+    = p.email
+    br/
 
 h4
-	| invite to project:
+  | invite to project:
 = form_tag :action => 'invite' do
-	= text_field :invite_to_project, :email, placeholder: 'example@email.com' 
-	= submit_tag "Invite"
+  = text_field :invite_to_project, :email, placeholder: 'example@email.com'
+  = submit_tag "Invite"

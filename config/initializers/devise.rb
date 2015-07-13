@@ -1,6 +1,6 @@
 
 Devise.setup do |config|
-	
+
 	config.mailer_sender = 'barbaraklosowska@gmail.com'
 
 	config.mailer = 'Devise::Mailer'
