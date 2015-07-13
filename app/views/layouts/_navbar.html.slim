@@ -9,7 +9,7 @@ nav.navbar.navbar-default
         li = link_to "Projects", projects_path
         li = link_to "Team", users_path
         li.dropdown
-          a[href='#' class='dropdown-toggle' data-toggle="dropdown" role="button" aria-expanded="false"] 
+          a[href='#' class='dropdown-toggle' data-toggle="dropdown" role="button" aria-expanded="false"]
             | Account
             span.caret
           ul.dropdown-menu role="menu"
@@ -28,4 +28,4 @@ nav.navbar.navbar-default
             li: a href="#" Account 2
             li.divider
             li = link_to "Logout", destroy_user_session_path, method: :delete
-              
+							

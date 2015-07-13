@@ -1,5 +1,6 @@
 class ProjectDecorator < Draper::Decorator
   delegate_all
+<<<<<<< HEAD
   
   # Define presentation-specific methods here. Helpers are accessed through
   # `helpers` (aka `h`). You can override attributes, for example:
@@ -10,4 +11,6 @@ class ProjectDecorator < Draper::Decorator
   #     end
   #   end
 
+=======
+>>>>>>> develop
 end

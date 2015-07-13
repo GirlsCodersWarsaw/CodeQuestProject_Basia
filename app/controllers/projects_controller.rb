@@ -1,14 +1,20 @@
 class ProjectsController < ApplicationController
+<<<<<<< HEAD
 	def index
     projects_to_decorate = current_user.projects
     @projects = ProjectPresenter.wrap(projects_to_decorate)
 	end
+=======
+  def index
+    @project = current_user.projects
+  end
+>>>>>>> develop
 
-	def new
-		@project = Project.new
-	end
+  def new
+    @project = Project.new
+  end
 
-	def create
+  def create
     @project = Project.new(project_params)
 
     if @project.save
@@ -35,17 +41,12 @@ class ProjectsController < ApplicationController
 
   def destroy
     @project = Project.find(params[:id])
-    
-    if @project.destroy
+
+    @project.destroy
         redirect_to projects_url, notice: "Project deleted."
-    end
   end
 
-  def show_email
-    @email = params[:email]
-  end
-
-  def invite  
+  def invite
     @project = Project.find(params[:id])
     email = params['invite_to_project']['email']
     @user = User.where(email: email)
@@ -62,18 +63,18 @@ class ProjectsController < ApplicationController
         redirect_to edit_project_path
       end
     end
-    
+
   end
 
   private
 
   def project_params
-    params.require(:project).permit(:name, 
-    																:hours, 
-    																:hourly_rate, 
-    																:billable, 
-    																:currency, 
-    																:company_id)
+    params.require(:project).permit(:name,
+                                    :hours,
+                                    :hourly_rate,
+                                    :billable,
+                                    :currency,
+                                    :company_id)
   end
 
 end

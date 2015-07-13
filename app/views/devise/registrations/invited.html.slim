@@ -1,6 +1,6 @@
-h2 
-  = @invitation.sender.email 
-  | invite you to 
+h2
+  = @invitation.sender.email
+  | invite you to
   = @invitation.sender.company.name
   |team.
   |Please, confirm:
@@ -12,9 +12,9 @@ h2
     = f.label :first_name
     br/
     = f.text_field :first_name, autofocus: true
-  
+
   div.field
-    = f.label :last_name 
+    = f.label :last_name
     br/
     = f.text_field :last_name
 
@@ -23,22 +23,22 @@ h2
       = company_form.label :company_name
       br/
       = @invitation.sender.company.name
-  
+
   div.field
     = f.label :email
-    br/ 
+    br/
     = @invitation.recipient_email
-  
+
   div.field
     = f.label :password
     - if @validatable
-    em 
+    em
       |  (
-      = @minimum_password_length 
+      = @minimum_password_length
       |  characters minimum)
     br/
     = f.password_field :password, autocomplete: "off"
-  
+
   div.field
     = f.label :password_confirmation
     br/
@@ -46,11 +46,11 @@ h2
 
   div.field
     = f.label :avatar do
-      = f.file_field :avatar 
-      = f.hidden_field :avatar_cache  
-  
+      = f.file_field :avatar
+      = f.hidden_field :avatar_cache
+
   div.actions
     = f.submit "Sign up"
-  
+
 
 = render "devise/shared/links"

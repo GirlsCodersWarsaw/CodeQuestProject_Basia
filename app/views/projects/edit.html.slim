@@ -1,9 +1,15 @@
+<<<<<<< HEAD
 .projects	
 	h2
 		| Edit Project:
+=======
+h1
+  | Edit Project:
+>>>>>>> develop
 
 	= render "form"
 
+<<<<<<< HEAD
 	div.text-label
 		| project members:
 	p
@@ -16,3 +22,17 @@
 	= form_tag :action => 'invite' do
 		= text_field :invite_to_project, :email, placeholder: 'example@email.com', class: 'text-field'
 		= submit_tag "Invite", class: 'button'
+=======
+div#project-members
+  | project members:
+p
+  - @project.users.each do |p|
+    = p.email
+    br/
+
+h4
+  | invite to project:
+= form_tag :action => 'invite' do
+  = text_field :invite_to_project, :email, placeholder: 'example@email.com'
+  = submit_tag "Invite"
+>>>>>>> develop

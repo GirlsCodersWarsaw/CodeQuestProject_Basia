@@ -1,7 +1,4 @@
 class RegistrationsController < Devise::RegistrationsController
-  def new
-    super
-  end
 
   def create
     @signup = Signup.new(params)
@@ -15,7 +12,4 @@ class RegistrationsController < Devise::RegistrationsController
 
   end
 
-  def update
-    super
-  end
 end 

@@ -28,10 +28,10 @@ class Signup
     end
   end
 
-  
+
 private
 
-  def persist! 
+  def persist!
     ActiveRecord::Base.transaction do
       @company = Company.create!(name: company_name)
       @user = @company.users.create!(first_name: first_name, last_name: last_name, email: email, password: password)
