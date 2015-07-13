@@ -4,18 +4,18 @@
   div.panel.panel-default
     <!-- Default panel contents -->
     div.panel-heading
-    	h4
-    		| Projects
+      h4
+        | Projects
     <!-- Table -->
     - if @projects.blank?
       | Add some projects!
-    - else  
+    - else
       table.table
-      	tr
+        tr
           th
-        		| name
+            | name
           th
-        		| hours
+            | hours
           th
             | members
           th
@@ -24,7 +24,7 @@
             | currency
           th
           th
-        
+
           - @projects.each do |p|
             tr
               td
