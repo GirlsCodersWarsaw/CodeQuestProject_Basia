@@ -8,22 +8,6 @@ head
 
 body
 
-<<<<<<< HEAD
-	p
-		- if user_signed_in?
-		  = render "layouts/navbar"
-		- else
-		   = link_to "Sign up", new_user_registration_path
-		   = " | "
-		   = link_to "Login", new_user_session_path
-	
-		- flash.each do |name, msg|
-      		= content_tag :div, msg, class: name
-	
-	div.wrapper
-    	section
-      		= yield
-=======
   p
     - if user_signed_in?
       = render "layouts/navbar"
@@ -35,7 +19,7 @@ body
     - flash.each do |name, msg|
       = content_tag :div, msg, class: name
 
-  div#wrapper
+  div.wrapper
     section
       = yield
->>>>>>> develop
+

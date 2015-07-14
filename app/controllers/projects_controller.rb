@@ -1,14 +1,9 @@
 class ProjectsController < ApplicationController
-<<<<<<< HEAD
+
 	def index
     projects_to_decorate = current_user.projects
     @projects = ProjectPresenter.wrap(projects_to_decorate)
 	end
-=======
-  def index
-    @project = current_user.projects
-  end
->>>>>>> develop
 
   def new
     @project = Project.new
