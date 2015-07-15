@@ -43,3 +43,23 @@ gem 'carrierwave', '~> 0.10.0'
 
 gem 'draper', '~> 2.1.0'
 
+### TESTING ###
+# So what did we just install?
+# rspec-rails - includes RSpec itself in a wrapper to make it play nicely with Rails 3.
+# factory_girl_rails - replaces Rails’ default fixtures for feeding test data to the test suite with much more preferable factories.
+# faker - generates names, email addresses, and other placeholders for factories.
+# capybara - makes it easy to programatically simulate your users’ interactions with your application.
+# launchy - does one thing, but does it well: It opens your default web browser upon failed integration specs to show you what your application is rendering.
+# guard-rspec - watches your application and tests and runs specs for you automatically when it detects changes.
+#- See more at: http://everydayrails.com/2012/03/12/testing-series-rspec-setup.html#sthash.J2aNeaQq.dpuf
+
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+end
+group :test do
+  gem 'faker'
+  gem 'capybara'
+  gem 'guard-rspec'
+  gem 'launchy'
+end
