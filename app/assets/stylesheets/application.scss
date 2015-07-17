@@ -6,69 +6,69 @@
 /* bootstrap navbar */
 
 .container-fluid {
-	background-color: #4965a0;
-	border: 0;
-	border-bottom: 1px solid #133783;
-	-webkit-box-shadow: 0 3px 3px -2px rgba(0, 0, 0, .52);
-	padding-left: 5%;
+  background-color: #4965a0;
+  border: 0;
+  border-bottom: 1px solid #133783;
+  -webkit-box-shadow: 0 3px 3px -2px rgba(0, 0, 0, .52);
+  padding-left: 5%;
 }
 
 .brand {
-	position: relative;
-	top: -6px;
-	left: 10px;
-	width: 30px;
+  position: relative;
+  top: -6px;
+  left: 10px;
+  width: 30px;
 }
 
 .navbar-default .navbar-nav > li > a {
-	color: white;
-	text-shadow: 0 -1px rgba(0, 0, 0, .5);
-	font-size: 14px;
-	font-weight: bold;
-	padding-top: 12px;
+  color: white;
+  text-shadow: 0 -1px rgba(0, 0, 0, .5);
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 12px;
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-	color: silver;
+  color: silver;
 }
 
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-	background-color: #8b9dc3;
-	color: white;
+  background-color: #8b9dc3;
+  color: white;
 }
 
 /* main container */
 
 #wrapper {
-	background-color: #e9eaed;
-	max-width: 88%;
-	margin: 0 auto;
-	padding: 1% 4%;
+  background-color: #e9eaed;
+  max-width: 88%;
+  margin: 0 auto;
+  padding: 1% 4%;
 }
 
 /* body fonts */
 
 body, button, input, label, select, td, textarea {
-	font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
-	font-size: 12px;
+  font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+  font-size: 12px;
 }
 
 /* flash notice - messages */
 
 .notice {
-	font-size: 16px;
-	margin-left: 7%;
-	font-style: italic;
-	font-weight: bold;
-	color: green;
+  font-size: 16px;
+  margin-left: 7%;
+  font-style: italic;
+  font-weight: bold;
+  color: green;
 }
 
 .alert {
-	font-size: 16px;
-	margin-left: 7%;
-	font-style: italic;
-	font-weight: bold;
-	color: red;
+  font-size: 16px;
+  margin-left: 7%;
+  font-style: italic;
+  font-weight: bold;
+  color: red;
 }
 
 @import "users";

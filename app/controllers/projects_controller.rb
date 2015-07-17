@@ -24,38 +24,50 @@ class ProjectsController < ApplicationController
 
   def update
     @project = Project.find(params[:id])
-      if @project.update(project_params)
-        flash[:notice] = "You have updated your project successfully."
-        redirect_to projects_path
-      else
-        render :edit
-      end
+    if @project.update(project_params)
+      flash[:notice] = "You have updated your project successfully."
+      redirect_to projects_path
+    else
+      render :edit
+    end
   end
 
   def destroy
     @project = Project.find(params[:id])
 
     @project.destroy
-        redirect_to projects_url, notice: "Project deleted."
+    redirect_to projects_url, notice: "Project deleted."
   end
 
   def invite
     @project = Project.find(params[:id])
-    email = params['invite_to_project']['email']
-    @user = User.where(email: email)
+    user = ProjectMemberService.new(params).verify_user
 
-    if @user.blank?
-      flash[:alert] = "there is no user with email: '#{email}' in your team :("
+    if user
+      flash[:notice] = "true"
       redirect_to edit_project_path
     else
-      if @project.add_user_to_project(@user)
-        ProjectMailer.invite_to_project(@project, @user).deliver
-        redirect_to edit_project_path
-      else
-        flash[:alert] = "user is already added to project"
-        redirect_to edit_project_path
-      end
+      flash[:alert] = "false"
+      redirect_to edit_project_path
     end
+
+
+    # @project = Project.find(params[:id])
+    # email = params['invite_to_project']['email']
+    # @user = User.where(email: email)
+    #
+    # if @user.blank?
+    #   flash[:alert] = "there is no user with email: '#{email}' in your team :("
+    #   redirect_to edit_project_path
+    # else
+    #   if @project.add_user_to_project(@user)
+    #     ProjectMailer.invite_to_project(@project, @user).deliver
+    #     redirect_to edit_project_path
+    #   else
+    #     flash[:alert] = "user is already added to project"
+    #     redirect_to edit_project_path
+    #   end
+    # end
 
   end
 
