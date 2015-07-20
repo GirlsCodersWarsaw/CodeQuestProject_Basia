@@ -16,10 +16,6 @@ class Project < ActiveRecord::Base
     end
   end
 
-  def project_members_list
-    self.users.map{|u| u.first_name}.join(", ")
-  end
-
   private
 
   def default_value
