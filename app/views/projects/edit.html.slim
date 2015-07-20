@@ -1,19 +1,19 @@
 .projects
-	h2
-		| Edit Project:
+  h2
+    | Edit Project:
 
-	= render "form"
+  = render "form"
 
-	div.text-label
-		| project members:
-	p
-		- @project.users.each do |p|
-			= p.email
-			br/
+  div.text-label
+    | project members:
+  p
+    - @project.users.each do |p|
+      = p.email
+      br/
 
-	p.text-label
-		| invite to project:
-	= form_tag :action => 'invite' do
-		= text_field :invite_to_project, :email, placeholder: 'example@email.com', class: 'text-field'
-		= submit_tag "Invite", class: 'button'
+  p.text-label
+    | invite to project:
+  = form_tag :action => 'invite' do
+    = text_field :invite_to_project, :email, placeholder: 'example@email.com', class: 'text-field'
+    = submit_tag "Invite", class: 'button'
 

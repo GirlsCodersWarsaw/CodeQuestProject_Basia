@@ -12,8 +12,8 @@ class User < ActiveRecord::Base
 
   scope :my_team, -> (user) {
     joins(:company).
-    where("companies.name = ?", user.company.name).
-    where.not(id: user.id)
+        where("companies.name = ?", user.company.name).
+        where.not(id: user.id)
   }
 
 end

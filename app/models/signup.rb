@@ -27,7 +27,7 @@ class Signup
     end
   end
 
-private
+  private
 
   def persist!
     ActiveRecord::Base.transaction do

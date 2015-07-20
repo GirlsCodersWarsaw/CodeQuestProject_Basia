@@ -1,9 +1,9 @@
 class ProjectsController < ApplicationController
 
-	def index
+  def index
     projects_to_decorate = current_user.projects
     @projects = ProjectPresenter.wrap(projects_to_decorate)
-	end
+  end
 
   def new
     @project = Project.new
@@ -26,19 +26,19 @@ class ProjectsController < ApplicationController
 
   def update
     @project = Project.find(params[:id])
-      if @project.update(project_params)
-        flash[:notice] = "You have updated your project successfully."
-        redirect_to projects_path
-      else
-        render :edit
-      end
+    if @project.update(project_params)
+      flash[:notice] = "You have updated your project successfully."
+      redirect_to projects_path
+    else
+      render :edit
+    end
   end
 
   def destroy
     @project = Project.find(params[:id])
 
     @project.destroy
-        redirect_to projects_url, notice: "Project deleted."
+    redirect_to projects_url, notice: "Project deleted."
   end
 
   def invite
