@@ -6,15 +6,6 @@ class Project < ActiveRecord::Base
 
   after_initialize :default_value
 
-  def add_user_to_project(user)
-    if user.in?(self.users)
-      false
-    else
-      self.users<<user
-      true
-    end
-  end
-
   private
 
   def default_value

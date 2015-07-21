@@ -1,4 +1,5 @@
 class ProjectsController < ApplicationController
+
   def index
     @project = current_user.projects
   end
@@ -24,6 +25,7 @@ class ProjectsController < ApplicationController
 
   def update
     @project = Project.find(params[:id])
+
     if @project.update(project_params)
       flash[:notice] = "You have updated your project successfully."
       redirect_to projects_path
@@ -40,35 +42,16 @@ class ProjectsController < ApplicationController
   end
 
   def invite
-    @project = Project.find(params[:id])
-    user = ProjectMemberService.new(params).verify_user
+    service = ProjectMemberService.new(params)
+    # @errors = service.errors
 
-    if user
-      flash[:notice] = "true"
+    if service.add_user
+      flash[:notice] = "'#{service.user.first_name}' was added to project: '#{service.project.name}' #{service.errors.full_messages}"
       redirect_to edit_project_path
     else
-      flash[:alert] = "false"
+      flash[:alert] = "user with email: '#{service.email}' wasn't added to project: '#{service.project.name}' #{service.errors.full_messages}"
       redirect_to edit_project_path
     end
-
-
-    # @project = Project.find(params[:id])
-    # email = params['invite_to_project']['email']
-    # @user = User.where(email: email)
-    #
-    # if @user.blank?
-    #   flash[:alert] = "there is no user with email: '#{email}' in your team :("
-    #   redirect_to edit_project_path
-    # else
-    #   if @project.add_user_to_project(@user)
-    #     ProjectMailer.invite_to_project(@project, @user).deliver
-    #     redirect_to edit_project_path
-    #   else
-    #     flash[:alert] = "user is already added to project"
-    #     redirect_to edit_project_path
-    #   end
-    # end
-
   end
 
   private

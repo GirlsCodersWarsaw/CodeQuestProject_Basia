@@ -13,5 +13,13 @@ p
 h4
   | invite to project:
 = form_tag :action => 'invite' do
+  /- if @errors.any?
+  /  div
+  /    h2 = pluralize(@errors.count, "error")
+  /      | prohibited this quest from being saved:
+  /
+  /    ul
+  /      - @errors.full_messages.each do |message|
+  /        li = message
   = text_field :invite_to_project, :email, placeholder: 'example@email.com'
   = submit_tag "Invite"
