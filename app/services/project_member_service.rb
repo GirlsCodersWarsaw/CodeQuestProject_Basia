@@ -11,18 +11,12 @@ class ProjectMemberService
     @errors = ActiveModel::Errors.new(self)
   end
 
-  # validates :email, format: { with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i, on: :create }
-
-  # def validate!
-  #   errors.add(:base, "it doesn't look like email") unless email =~ /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i
-  # end
-
   def add_user
     if user.blank? && email =~ /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i
       errors.add(:user, "with that email doesn't exist in your team")
       false
     elsif user.blank?
-      errors.add(:base, "it doesn't look like email")
+      errors.add(:base, "something is wrong")
       false
     else
       verify_user && send_email

@@ -3,6 +3,7 @@ class Project < ActiveRecord::Base
   has_and_belongs_to_many :users
   validates :name, :hours, presence: true
   validates :hours, :hourly_rate, numericality: true
+  validates :users, uniqueness: { scope: :email }
 
   after_initialize :default_value
 
