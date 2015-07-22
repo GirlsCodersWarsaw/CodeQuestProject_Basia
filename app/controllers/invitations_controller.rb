@@ -1,9 +1,5 @@
 class InvitationsController < ApplicationController
 
-  def new
-    @invitation = Invitation.new
-  end
-
   def create
     @invitation = Invitation.new(invitation_params)
     @invitation.sender = current_user
@@ -13,7 +9,8 @@ class InvitationsController < ApplicationController
       InvitationMailer.confirmation_email(@invitation).deliver
       redirect_to users_path
     else
-      flash[:alert] = "something is wrong :/ Probably you used wrong email address. Try again"
+      @invitation.valid?
+      flash[:alert] = "it doesn't look like email"
       redirect_to users_path
     end
   end
@@ -26,7 +23,7 @@ class InvitationsController < ApplicationController
     redirect_to users_path
   end
 
-  def confirm_invitation
+  def update
     @invitation = Invitation.find_by(id: params[:id])
     if @invitation
       @user = User.new do |user|

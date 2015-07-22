@@ -3,7 +3,7 @@
     div
       h4
         = pluralize(@invitation.errors.count, "error")
-        |  prohibited this quest from being saved:
+        |  prohibited this invitation from being saved:
 
       ul
         - @invitation.errors.full_messages.each do |message|

@@ -1,3 +1,5 @@
 h2 invitation confirmation
 
-= link_to confirm_invitation_invitation_url(@invitation), "Confirm"
+/= link_to confirm_invitation_invitation_url(@invitation), "Confirm"
+
+= link_to "Confirm", invitation_url(@invitation), :action=> :update, :method=> :patch
