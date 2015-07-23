@@ -6,7 +6,6 @@ class Signup
 
   attr_reader :user, :company, :first_name, :last_name, :company_name, :email, :password
 
-  # Forms are never themselves persisted
   def initialize(params)
     @first_name = params[:user][:first_name]
     @last_name = params[:user][:last_name]
@@ -14,7 +13,7 @@ class Signup
     @email = params[:user][:email]
     @password = params[:user][:password]
   end
-
+  # Forms are never themselves persisted
   def persisted?
     false
   end
@@ -28,8 +27,7 @@ class Signup
     end
   end
 
-
-private
+  private
 
   def persist!
     ActiveRecord::Base.transaction do

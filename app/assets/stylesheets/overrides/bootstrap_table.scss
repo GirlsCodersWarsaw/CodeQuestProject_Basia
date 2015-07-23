@@ -1,0 +1,29 @@
+/* bootstrap table */
+div.panel.panel-default {
+  display: table;
+}
+
+.panel-default > .panel-heading {
+  background-color: #819bd2;
+  color: white;
+  border-bottom: 1px solid #627AAD;
+}
+
+div.panel {
+  margin: 5px;
+  width:  400px;
+}
+
+/* x button */
+
+.delete-button {
+  position: relative;
+  top: -2px;
+  left: 0px;
+  width: 20px;
+  border: 1px solid #cfdcec;
+}
+
+.delete-button:hover {
+  background: #819bd2;
+}
