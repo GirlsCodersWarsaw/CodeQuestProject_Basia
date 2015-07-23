@@ -3,39 +3,28 @@
   div.panel.panel-default
     <!-- Default panel contents -->
     div.panel-heading
-      h4
-        | Projects
+      h4 Projects
     <!-- Table -->
     - if @projects.blank?
       | Add some projects!
     - else
       table.table
         tr
-          th
-            | name
-          th
-            | hours
-          th
-            | members
-          th
-            | hourly rate
-          th
-            | currency
+          th name
+          th hours
+          th members
+          th hourly rate
+          th currency
           th
           th
 
           - @projects.each do |p|
             tr
-              td
-                = p.name
-              td
-                = p.hours
-              td
-                = p.members
-              td
-                = p.hourly_rate_or_empty
-              td
-                = p.currency_or_empty
+              td = p.name
+              td = p.hours
+              td = p.members
+              td = p.hourly_rate_or_empty
+              td = p.currency_or_empty
               td.x-button-background
                 = link_to (image_tag("x.png", alt: "x", class: "delete-button")), project_path(p), method: :delete, data: { confirm: 'Are you sure?' }
               td

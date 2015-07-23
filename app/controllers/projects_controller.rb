@@ -29,6 +29,7 @@ class ProjectsController < ApplicationController
       flash[:notice] = "You have updated your project successfully."
       redirect_to projects_path
     else
+      flash[:alert] = "project wasn't updated :("
       render :edit
     end
   end
