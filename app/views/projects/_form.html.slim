@@ -1,9 +1,9 @@
-
 = form_for @project do |f|
   - if @project.errors.any?
     div
-      h2 = pluralize(@project.errors.count, "error")
-        | prohibited this quest from being saved:
+      h4
+        = pluralize(@project.errors.count, "error")
+        |  prohibited this project from being saved:
 
       ul
         - @project.errors.full_messages.each do |message|

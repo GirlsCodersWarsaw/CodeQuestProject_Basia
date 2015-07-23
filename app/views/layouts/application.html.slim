@@ -19,6 +19,7 @@ body
     - flash.each do |name, msg|
       = content_tag :div, msg, class: name
 
-  div#wrapper
+  div.wrapper
     section
       = yield
+

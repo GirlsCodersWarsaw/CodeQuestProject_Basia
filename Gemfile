@@ -53,6 +53,7 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'dotenv-rails'
   gem 'byebug'
+  gem 'dotenv-rails'
 end
 group :test do
   gem 'faker'
