@@ -5,7 +5,12 @@ Rails.application.routes.draw do
 
 	root 'welcome#index'
 
-	resources :invitations, only: [:new, :create, :destroy, :update]
+	resources :invitations, only: [:new, :create, :destroy, :update] do
+    member do
+      get :confirm_invitation
+    end
+  end
+
 
 	resources :projects do
 		member do

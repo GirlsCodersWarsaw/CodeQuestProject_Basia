@@ -10,7 +10,7 @@ class InvitationsController < ApplicationController
       redirect_to users_path
     else
       @invitation.valid?
-      flash[:alert] = "it doesn't look like email"
+      flash[:alert] = "something is wrong"
       redirect_to users_path
     end
   end
@@ -23,7 +23,7 @@ class InvitationsController < ApplicationController
     redirect_to users_path
   end
 
-  def update
+  def confirm_invitation
     @invitation = Invitation.find_by(id: params[:id])
     if @invitation
       @user = User.new do |user|

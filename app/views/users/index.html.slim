@@ -29,8 +29,9 @@
   p.text-text  
     - @pending_invitations.each do |i|
       = i.recipient_email
-      |  | 
+      |  |
       = link_to "destroy", invitation_path(i), method: :delete, data: { confirm: 'Are you sure?' }
+      br/
 
 
 
