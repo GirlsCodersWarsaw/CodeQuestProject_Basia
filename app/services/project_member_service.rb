@@ -16,7 +16,7 @@ class ProjectMemberService
       errors.add(:user, "with that email doesn't exist in your team")
       false
     elsif user.blank?
-      errors.add(:base, "something is wrong")
+      errors.add(:base, "it doesn't look like email")
       false
     else
       verify_user && send_email
@@ -32,7 +32,7 @@ class ProjectMemberService
       errors.add(:user, "is already member of this project")
       false
     else
-      project.users<<user
+      Membership.create(project_id: project.id, user_id: user.id, user_role: "member", accepted: false)
     end
   end
 

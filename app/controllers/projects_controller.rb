@@ -11,7 +11,7 @@ class ProjectsController < ApplicationController
     @project = Project.new(project_params)
 
     if @project.save
-      @project.users<<current_user
+      Membership.create(project_id: @project.id, user_id: current_user.id, user_role: "owner", accepted: true)
       redirect_to projects_path,  notice: "Your project was saved"
     else
       render "new"

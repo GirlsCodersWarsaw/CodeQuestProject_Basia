@@ -1,7 +1,8 @@
 class User < ActiveRecord::Base
 
   belongs_to :company
-  has_and_belongs_to_many :projects
+  has_many :memberships
+  has_many :projects, through: :memberships
 
   mount_uploader :avatar, AvatarUploader
 
@@ -12,8 +13,8 @@ class User < ActiveRecord::Base
 
   scope :my_team, -> (user) {
     joins(:company).
-        where("companies.name = ?", user.company.name).
-        where.not(id: user.id)
+      where("companies.name = ?", user.company.name).
+      where.not(id: user.id)
   }
 
 end
