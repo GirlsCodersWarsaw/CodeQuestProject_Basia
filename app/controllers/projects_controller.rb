@@ -42,7 +42,6 @@ class ProjectsController < ApplicationController
 
   def invite
     service = ProjectMemberService.new(params)
-    # @errors = service.errors
 
     if service.add_user
       flash[:notice] = "'#{service.user.first_name}' was added to project: '#{service.project.name}' #{service.errors.full_messages}"
