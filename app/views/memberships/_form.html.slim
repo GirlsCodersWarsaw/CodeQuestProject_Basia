@@ -1,0 +1,14 @@
+= form_for [@project, @membership], { controller: "memberships", action: "create", class: "member" } do |f|
+  h1
+    div#message
+      - if @membership.errors.try(:any?)
+        h4
+          = pluralize(@membership.errors.count, "error")
+          |  prohibited this membership from being saved:
+
+        ul
+          - @membership.errors.full_messages.each do |message|
+            li = message
+  = f.label :invite_to_project, "Invite to project:", class: 'text-label'
+  = text_field :invite_to_project, :email, placeholder: 'example@email.com', class: 'text-field'
+  = f.submit "Invite!", class: 'button'

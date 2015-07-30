@@ -20,6 +20,7 @@ class ProjectsController < ApplicationController
 
   def edit
     @project = Project.find(params[:id])
+    @membership = @project.memberships.build(user_role: "member", accepted: false)
   end
 
   def update
@@ -41,15 +42,15 @@ class ProjectsController < ApplicationController
   end
 
   def invite
-    service = ProjectMemberService.new(params)
-
-    if service.add_user
-      flash[:notice] = "'#{service.user.first_name}' was added to project: '#{service.project.name}' #{service.errors.full_messages}"
-      redirect_to edit_project_path
-    else
-      flash[:alert] = "user with email: '#{service.email}' wasn't added to project: '#{service.project.name}' #{service.errors.full_messages}"
-      redirect_to edit_project_path
-    end
+    # service = ProjectMemberService.new(params)
+    #
+    # if service.add_user
+    #   flash[:notice] = "'#{service.user.first_name}' was added to project: '#{service.project.name}' #{service.errors.full_messages}"
+    #   redirect_to edit_project_path
+    # else
+    #   flash[:alert] = "user with email: '#{service.email}' wasn't added to project: '#{service.project.name}' #{service.errors.full_messages}"
+    #   redirect_to edit_project_path
+    # end
   end
 
   private

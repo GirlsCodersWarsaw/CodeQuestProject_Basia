@@ -1,25 +1,29 @@
 class ProjectMemberService
 
-  include ActiveModel::Validations
-
-  attr_reader :project, :email, :user, :errors
+  attr_reader :project, :email, :user, :errors, :membership
 
   def initialize(params)
-    @project = Project.find(params[:id])
+    @project = Project.find(params[:project_id])
     @email = params[:invite_to_project][:email]
     @user = User.find_by(email: email)
     @errors = ActiveModel::Errors.new(self)
+    @membership = @project.memberships.build(project_id: project.id, user_role: "member", accepted: false)
   end
 
   def add_user
-    if user.blank? && email =~ /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i
-      errors.add(:user, "with that email doesn't exist in your team")
-      false
-    elsif user.blank?
+
+    if (email =~ /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i).nil?
       errors.add(:base, "it doesn't look like email")
       false
+    elsif user.nil?
+      # tu potrzebuję walidacji z błędem nie wiem jeszcze gdzie ta walidacja ale chyba na membership
+      errors.add(:base, "User with that email doesn't exist in your team")
+      false
+    # elsif user.in?(project.users)
+    #   errors.add(:user, "is already member of this project")
+    #   false
     else
-      verify_user && send_email
+      update_membership && send_email
     end
   end
 
@@ -27,13 +31,15 @@ class ProjectMemberService
     ProjectMailer.invite_to_project(project, user).deliver
   end
 
-  def verify_user
-    if user.in?(project.users)
-      errors.add(:user, "is already member of this project")
-      false
+  def update_membership
+    membership.user_id = user.id
+    if membership.save
+      true
     else
-      Membership.create(project_id: project.id, user_id: user.id, user_role: "member", accepted: false)
+      @errors = membership.errors
+      false
     end
   end
+
 
 end
