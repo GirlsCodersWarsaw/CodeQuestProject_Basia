@@ -6,26 +6,13 @@
 
   div.text-label
     | project members:
-  p
+  p#project-members
     - @project.users.each do |p|
       = p.email
       br/
 
   p
     = render 'memberships/form'
-
-  /= form_tag :action => 'invite' do
-  /  /- if @project.errors.any?
-  /  /  div
-  /  /    h2 = pluralize(@project.errors.count, "error")
-  /  /      | prohibited this membership from being saved:
-  /  /
-  /  /    ul
-  /  /      - @project.errors.full_messages.each do |message|
-  /  /        li = message
-  /  = text_field :invite_to_project, :email, placeholder: 'example@email.com', class: 'text-field'
-  /  = submit_tag "Invite", class: 'button'
-
 
 
 

@@ -16,12 +16,9 @@ class ProjectMemberService
       errors.add(:base, "it doesn't look like email")
       false
     elsif user.nil?
-      # tu potrzebuję walidacji z błędem nie wiem jeszcze gdzie ta walidacja ale chyba na membership
       errors.add(:base, "User with that email doesn't exist in your team")
       false
-    # elsif user.in?(project.users)
-    #   errors.add(:user, "is already member of this project")
-    #   false
+
     else
       update_membership && send_email
     end
