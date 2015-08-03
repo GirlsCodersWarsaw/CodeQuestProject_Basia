@@ -12,7 +12,7 @@ $(document).ready(function() {
             document.getElementById('message').innerText = "User was added to project";
         }).error(function (json) {
             console.log("error", json);
-            document.getElementById('message').innerText = json.responseText;
+            document.getElementById('message').innerText = json.responseText.slice(2, -2);
         });
         return false;
     });
