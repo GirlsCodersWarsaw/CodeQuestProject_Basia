@@ -38,5 +38,4 @@ class ProjectMemberService
     end
   end
 
-
 end
