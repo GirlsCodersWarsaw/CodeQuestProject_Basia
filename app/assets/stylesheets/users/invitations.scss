@@ -1,0 +1,36 @@
+/* div with validation errors - js */
+
+div#message {
+  font-size: large;
+  width: 395px;
+  text-align: center;
+  margin: 20px 0 0 6px;
+}
+
+/* invitation form */
+
+.text-label {
+  margin: 15px 5px 0 15px;
+  display: block;
+  height: 20px;
+  font-weight: bold;
+}
+
+.text-text {
+  margin: 15px 5px 10px 15px;
+  display: block;
+  height: auto;
+}
+
+.text-field {
+  margin: 0 0 0 6px;
+  width: 320px;
+  height: 35px;
+}
+
+.button {
+  width: 75px;
+  height: 35px;
+  background-color: #819bd2;
+  color: white;
+}

@@ -1,2 +1,12 @@
 en:
     hello: "Hello world"
+    activerecord:
+      attributes:
+        invitation:
+          recipient_email: "email"
+#      errors:
+#        models:
+#          invitation:
+#            attributes:
+#              recipient_email:
+#                blank: "coś tu można sobie wpisać"

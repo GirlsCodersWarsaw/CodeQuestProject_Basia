@@ -1,13 +1,6 @@
 = form_for @invitation, {controller: "invitations", action: "create"} do |f|
-  - if @invitation.errors.any?
-    div
-      h4
-        = pluralize(@invitation.errors.count, "error")
-        |  prohibited this invitation from being saved:
 
-      ul
-        - @invitation.errors.full_messages.each do |message|
-          li = message
+  div#message
 
   = f.label :recipient_email, "Invite new friend:", class: 'text-label'
   = f.text_field :recipient_email, class: 'text-field', placeholder: 'example@email.com'
