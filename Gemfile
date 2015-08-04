@@ -24,9 +24,6 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
-# Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-gem 'spring',        group: :development
-
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
@@ -37,11 +34,34 @@ gem 'thin', '~> 1.6.3'
 gem 'slim', '~> 3.0.3'
 gem 'slim-rails', '~> 3.0.1'
 
-gem 'dotenv-rails', :groups => [:development, :test]
-gem 'byebug', groups: [:development, :test]
-
-
 gem 'carrierwave', '~> 0.10.0'
 
 gem 'draper', '~> 2.1.0'
+
+### TESTING ###
+# So what did we just install?
+# rspec-rails - includes RSpec itself in a wrapper to make it play nicely with Rails 3.
+# factory_girl_rails - replaces Rails’ default fixtures for feeding test data to the test suite with much more preferable factories.
+# faker - generates names, email addresses, and other placeholders for factories.
+# capybara - makes it easy to programatically simulate your users’ interactions with your application.
+# launchy - does one thing, but does it well: It opens your default web browser upon failed integration specs to show you what your application is rendering.
+# guard-rspec - watches your application and tests and runs specs for you automatically when it detects changes.
+#- See more at: http://everydayrails.com/2012/03/12/testing-series-rspec-setup.html#sthash.J2aNeaQq.dpuf
+
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'dotenv-rails'
+  gem 'byebug'
+  gem 'dotenv-rails'
+end
+group :test do
+  gem 'faker'
+  gem 'capybara'
+  gem 'guard-rspec'
+  gem 'launchy'
+end
+group :development do
+  gem 'spring'
+end
 

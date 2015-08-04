@@ -1,5 +1,4 @@
 class ProjectsController < ApplicationController
-
   def index
     @projects = ProjectPresenter.wrap(current_user.projects)
   end
@@ -12,7 +11,7 @@ class ProjectsController < ApplicationController
     @project = Project.new(project_params)
 
     if @project.save
-      @project.users<<current_user
+      Membership.create(project_id: @project.id, user_id: current_user.id, user_role: "owner", accepted: true)
       redirect_to projects_path,  notice: "Your project was saved"
     else
       render "new"
@@ -42,23 +41,16 @@ class ProjectsController < ApplicationController
   end
 
   def invite
-    @project = Project.find(params[:id])
-    email = params['invite_to_project']['email']
-    @user = User.where(email: email)
+    service = ProjectMemberService.new(params)
+    # @errors = service.errors
 
-    if @user.blank?
-      flash[:alert] = "there is no user with email: '#{email}' in your team :("
+    if service.add_user
+      flash[:notice] = "'#{service.user.first_name}' was added to project: '#{service.project.name}' #{service.errors.full_messages}"
       redirect_to edit_project_path
     else
-      if @project.add_user_to_project(@user)
-        ProjectMailer.invite_to_project(@project, @user).deliver
-        redirect_to edit_project_path
-      else
-        flash[:alert] = "user is already added to project"
-        redirect_to edit_project_path
-      end
+      flash[:alert] = "user with email: '#{service.email}' wasn't added to project: '#{service.project.name}' #{service.errors.full_messages}"
+      redirect_to edit_project_path
     end
-
   end
 
   private
