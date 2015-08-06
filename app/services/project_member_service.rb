@@ -18,7 +18,6 @@ class ProjectMemberService
     elsif user.nil?
       errors.add(:base, "User with that email doesn't exist in your team")
       false
-
     else
       update_membership && send_email
     end

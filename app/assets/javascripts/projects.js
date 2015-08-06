@@ -1,13 +1,18 @@
 $(document).ready(function() {
-    $('#project_billable').hover(function() {
-        var checkbox = document.getElementById('project_billable');
-        var details_div = document.getElementById('financial-details');
-        checkbox.onchange = function () {
-            if (this.checked) {
-                details_div.style['display'] = 'block';
-            } else {
-                details_div.style['display'] = 'none';
-            }
-        }
+  var checkbox = $('#project_billable');
+  var detailsDiv = $('#financial-details');
+  if (checkbox.is(':checked')) {
+    detailsDiv.css("display", "block");
+  } else {
+    detailsDiv.css("display", "none");
+  };
+  checkbox.hover(function() {
+    checkbox.change(function() {
+      if (checkbox.is(':checked')) {
+        detailsDiv.css("display", "block");
+      } else {
+        detailsDiv.css("display", "none");
+      }
     })
+  })
 });
