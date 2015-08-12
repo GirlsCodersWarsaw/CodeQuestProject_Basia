@@ -4,14 +4,15 @@ class InvitationsController < ApplicationController
     @invitation = Invitation.new(invitation_params)
     @invitation.sender = current_user
     @invitation.accepted = false
-    if @invitation.save
-      flash[:notice] = "Thank you, invitation created."
-      InvitationMailer.confirmation_email(@invitation).deliver
-      redirect_to users_path
-    else
-      @invitation.valid?
-      flash[:alert] = "something is wrong"
-      redirect_to users_path
+
+    respond_to do |format|
+      if @invitation.save
+        format.html { redirect_to users_path, notice: "Thank you, invitation created." }
+        format.json { render json: @invitation, status: :ok }
+      else
+        format.html { redirect_to users_path, alert: "something is wrong" }
+        format.json { render json: @invitation.errors.full_messages, status: :unprocessable_entity }
+      end
     end
   end
 

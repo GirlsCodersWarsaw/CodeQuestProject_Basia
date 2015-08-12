@@ -11,12 +11,14 @@ Rails.application.routes.draw do
     end
   end
 
-
 	resources :projects do
-		member do
-			get :invite
-			post :invite
-		end
-	end
+		resources :memberships, only: :create
+		# member do
+		# 	get :invite
+		# 	post :invite
+		# end
+  end
+
+  # resources :memberships, only: :create
 
 end

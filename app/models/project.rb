@@ -15,5 +15,4 @@ class Project < ActiveRecord::Base
     self.hourly_rate ||= 10
   end
 
-
 end
