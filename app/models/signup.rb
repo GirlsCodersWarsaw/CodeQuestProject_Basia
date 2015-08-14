@@ -2,10 +2,13 @@ class Signup
 
   include ActiveModel::Validations
 
-  attr_reader :user, :company, :first_name, :last_name, :company_name, :email, :password, :errors
+  attr_reader :user, :company, :first_name, :last_name, :company_name, :email, :password, :password_confirmation, :errors
 
-  validates :first_name, :last_name, :company_name, :email, :password, presence: true
-  # validate  :employee_ids_should_belong_to_organization
+  validates :first_name, :last_name, :company_name, :email, presence: true
+  validates :password, presence: true,
+            length: {:within => 8..40},
+            confirmation: true
+  validate :email_is_unique
 
   def initialize(params)
     @first_name = params[:user][:first_name]
@@ -13,6 +16,7 @@ class Signup
     @company_name = params[:user][:company][:company_name]
     @email = params[:user][:email]
     @password = params[:user][:password]
+    @password_confirmation = params[:user][:password_confirmation]
     @errors = ActiveModel::Errors.new(self)
   end
 
@@ -32,11 +36,11 @@ class Signup
 
   private
 
-  # def employee_ids_should_belong_to_organization
-  #   if organization.get_employees(employee_ids).length != employee_ids.length
-  #     errors.add(:employee_ids, :invalid)
-  #   end
-  # end
+  def email_is_unique
+    unless User.where(email: email).count == 0
+      errors.add(:email, 'is already taken')
+    end
+  end
 
   def persist!
     ActiveRecord::Base.transaction do
