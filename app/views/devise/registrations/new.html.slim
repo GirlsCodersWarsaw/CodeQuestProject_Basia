@@ -1,14 +1,7 @@
 h2 Sign up
 
 = form_for(resource, as: resource_name, url: registration_path(resource_name), html: {multipart: true}) do |f|
-  - if resource.errors.any?
-    div
-      h4
-        = pluralize(resource.errors.count, "error")
-        |  prohibited this project from being saved:
-      ul
-        - resource.errors.full_messages.each do |message|
-          li = message
+  = devise_error_messages!
 
   div.field
     = f.label :first_name
@@ -33,11 +26,7 @@ h2 Sign up
 
   div.field
     = f.label :password
-    - if @validatable
-    em
-      |  (
-      = @minimum_password_length
-      |  characters minimum)
+    | (8 characters minimum)
     br/
     = f.password_field :password, autocomplete: "off"
 

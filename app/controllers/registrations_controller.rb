@@ -1,6 +1,5 @@
 class RegistrationsController < Devise::RegistrationsController
-
-
+  
   def create
     @signup = Signup.new(params)
 
