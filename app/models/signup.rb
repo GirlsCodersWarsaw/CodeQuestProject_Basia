@@ -37,18 +37,14 @@ class Signup
   private
 
   def email_is_unique
-    unless User.where(email: email).count == 0
-      errors.add(:email, 'is already taken')
+    unless User.where('lower(email) = ?', email.downcase).count == 0
+      errors.add(:email, 'has already been taken')
     end
   end
 
   def persist!
     ActiveRecord::Base.transaction do
-      if Company.find_by_name(company_name)
-        @company = Company.find_by_name(company_name)
-      else
-        @company = Company.create!(name: company_name)
-      end
+      @company = Company.where('lower(name) = ?', company_name.downcase).first_or_create!(name: company_name)
       @user = @company.users.create!(first_name: first_name, last_name: last_name, email: email, password: password)
     end
   end
