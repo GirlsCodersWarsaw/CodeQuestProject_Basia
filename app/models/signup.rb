@@ -6,7 +6,7 @@ class Signup
 
   validates :first_name, :last_name, :company_name, :email, presence: true
   validates :password, presence: true,
-            length: {:within => 8..40},
+            length: {within: 8..40},
             confirmation: true
   validate :email_is_unique
 
