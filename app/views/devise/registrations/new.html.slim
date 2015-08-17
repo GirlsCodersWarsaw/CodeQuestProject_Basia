@@ -26,11 +26,7 @@ h2 Sign up
 
   div.field
     = f.label :password
-    - if @validatable
-    em
-      |  (
-      = @minimum_password_length
-      |  characters minimum)
+    | (8 characters minimum)
     br/
     = f.password_field :password, autocomplete: "off"
 
@@ -42,7 +38,6 @@ h2 Sign up
   div.field
     = f.label :avatar do
       = f.file_field :avatar
-      = f.hidden_field :avatar_cache
 
   div.actions
     = f.submit "Sign up"

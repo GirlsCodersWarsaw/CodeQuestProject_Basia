@@ -4,6 +4,8 @@ en:
       attributes:
         invitation:
           recipient_email: "email"
+        company:
+          name: "company name"
 #      errors:
 #        models:
 #          invitation:
