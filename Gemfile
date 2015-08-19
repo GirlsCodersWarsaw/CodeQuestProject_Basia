@@ -50,16 +50,18 @@ gem 'draper', '~> 2.1.0'
 
 group :development, :test do
   gem 'rspec-rails'
-  gem "factory_girl_rails", "~> 4.0"
+  gem 'factory_girl_rails', '~> 4.0'
   gem 'dotenv-rails'
   gem 'byebug'
-  gem 'dotenv-rails'
 end
 group :test do
   gem 'faker'
   gem 'capybara'
   gem 'guard-rspec'
   gem 'launchy'
+  gem 'shoulda-matchers', require: false
+  gem 'database_cleaner', '~> 1.4.1'
+  gem 'fuubar'
 end
 group :development do
   gem 'spring'
