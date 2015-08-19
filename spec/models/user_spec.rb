@@ -15,17 +15,14 @@ describe User do
 
   describe "my_team" do
     context "not include current user" do
+      let(:current_user) { create :user }
+      let(:u1) { create :user }
+      let(:u2) { create :user }
+      let(:company) { create :company }
+      before { company.users<<[current_user, u1, u2] }
 
-      before do
-        @current_user = create :user
-        company = create :company
-        @u1 = create :user
-        @u2 = create :user
-        company.users<<[@current_user, @u1, @u2]
-      end
-
-      it { expect(User.my_team(@current_user)).to include(@u1, @u2) }
-      it { expect(User.my_team(@current_user)).to_not include(@current_user) }
+      it { expect(User.my_team(current_user)).to include(u1, u2) }
+      it { expect(User.my_team(current_user)).to_not include(current_user) }
     end
   end
 
