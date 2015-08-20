@@ -1,16 +1,17 @@
 require 'rails_helper'
 
 describe Signup do
-
+  before do
+    @params = { user: {first_name: "Joe",
+                      last_name: "Doe",
+                      email: "example@example.com",
+                      password: "password",
+                      password_confirmation: "password",
+                      company: { company_name: "my company"}}}
+  end
   context 'is valid' do
     before do
-      params = { user: {first_name: "Joe",
-                        last_name: "Doe",
-                        email: "example@example.com",
-                        password: "password",
-                        password_confirmation: "password",
-                        company: { company_name: "my company"}}}
-      @signup = Signup.new(params)
+      @signup = Signup.new(@params)
     end
 
     it 'exist' do
@@ -53,14 +54,9 @@ describe Signup do
 
     context 'password is too short' do
       before do
-        @user = create(:user, email: "example@example.com")
-        params = { user: {first_name: "Joe",
-                          last_name: "Doe",
-                          email: "example@example.com",
-                          password: "pass",
-                          password_confirmation: "pass",
-                          company: { company_name: "my company"}}}
-        @signup = Signup.new(params)
+        @params[:user][:password] = "pass"
+        @params[:user][:password_confirmation] = "pass"
+        @signup = Signup.new(@params)
       end
 
       it "can't be saved" do
@@ -76,13 +72,7 @@ describe Signup do
     context 'email has already been taken' do
       before do
         @user = create(:user, email: "example@example.com")
-        params = { user: {first_name: "Joe",
-                          last_name: "Doe",
-                          email: "example@example.com",
-                          password: "password",
-                          password_confirmation: "password",
-                          company: { company_name: "my company"}}}
-        @signup = Signup.new(params)
+        @signup = Signup.new(@params)
       end
 
       it "can't be saved" do
@@ -98,14 +88,8 @@ describe Signup do
   end
   context 'company is already exist' do
     before do
-      @company = create(:company, name: "The company")
-      params = { user: {first_name: "Joe",
-                        last_name: "Doe",
-                        email: "example@example.com",
-                        password: "password",
-                        password_confirmation: "password",
-                        company: { company_name: "the Company"}}}
-      @signup = Signup.new(params)
+      @company = create(:company, name: "MY comPany")
+      @signup = Signup.new(@params)
     end
 
     it "can be saved" do
@@ -119,5 +103,3 @@ describe Signup do
     end
   end
 end
-
-
