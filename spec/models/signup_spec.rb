@@ -96,6 +96,28 @@ describe Signup do
       end
     end
   end
+  context 'company is already exist' do
+    before do
+      @company = create(:company, name: "The company")
+      params = { user: {first_name: "Joe",
+                        last_name: "Doe",
+                        email: "example@example.com",
+                        password: "password",
+                        password_confirmation: "password",
+                        company: { company_name: "the Company"}}}
+      @signup = Signup.new(params)
+    end
+
+    it "can be saved" do
+      expect(@signup).to respond_to(:save)
+      expect(@signup.save).to be_truthy
+    end
+
+    it "doesn't create other company" do
+      @signup.save
+      expect(@signup.company).to eq(@company)
+    end
+  end
 end
 
 
