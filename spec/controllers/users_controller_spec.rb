@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe UsersController, type: :controller do
   login_user
-  context "index" do
+  describe "GET #index" do
     let(:company) { create :company }
     before { company.users<<@current_user }
     before { get :index }
@@ -28,10 +28,16 @@ describe UsersController, type: :controller do
     end
   end
 
-  context "destroy" do
+  describe "DELETE #destroy" do
 
-    it do
-      # @current_user.destroy
+    it "deletes the user" do
+      joe = create :user
+      expect{ delete :destroy, id: joe}.to change(User, :count).by(-1)
+    end
+    it "redirect to users_url" do
+      joe = create :user
+      delete :destroy, id: joe
+      expect(response).to redirect_to(users_url)
     end
   end
 end
