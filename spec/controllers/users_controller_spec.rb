@@ -25,9 +25,11 @@ describe UsersController, type: :controller do
 
     describe "assigned @pending_invitations" do
       let(:invitation) { create :invitation, accepted: false, sender: current_user }
+      let(:accepted_invitation) { create :invitation, accepted: true, sender: current_user }
       let(:pending_invitations) { Invitation.pending(current_user) }
       it "contain proper invitations" do
         expect(pending_invitations).to include(invitation)
+        expect(pending_invitations).to_not include(accepted_invitation)
       end
     end
   end

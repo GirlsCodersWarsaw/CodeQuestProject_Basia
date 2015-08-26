@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe Signup do
-  context 'is valid' do
+  context 'with proper params' do
     before do
       @params = { user: {first_name: "Joe",
                          last_name: "Doe",
@@ -12,21 +12,17 @@ describe Signup do
       @signup = Signup.new(@params)
     end
 
-    it 'exist' do
-      expect(@signup).to be_truthy
-    end
-
-    it 'can be saved' do
+    it 'is valid' do
       expect(@signup).to be_valid
     end
 
-    context 'company is already exist' do
+    context 'when company is already exist' do
       before do
         @company = create(:company, name: "MY comPany")
         @signup = Signup.new(@params)
       end
 
-      it "can be saved" do
+      it "is valid" do
         expect(@signup).to be_valid
       end
 
@@ -37,8 +33,8 @@ describe Signup do
     end
   end
 
-  context 'is invalid' do
-    context 'arguments are blank' do
+  context 'with wrong params' do
+    context 'when arguments are blank' do
       before do
         params = { user: {first_name: "",
                           last_name: "",
@@ -49,22 +45,21 @@ describe Signup do
         @signup = Signup.new(params)
       end
 
-      it "can't be saved" do
+      it "is invalid" do
         expect(@signup).to be_invalid
       end
 
       it 'has right errors' do
         @signup.valid?
-        expect(@signup.errors.full_messages).to include("First name can't be blank",
-                                                        "Last name can't be blank",
-                                                        "Company name can't be blank",
-                                                        "Email can't be blank",
-                                                        "Password can't be blank",
-                                                        "Password is too short (minimum is 8 characters)")
+        expect(@signup.errors[:first_name]).to_not be_nil
+        expect(@signup.errors[:last_name]).to_not be_nil
+        expect(@signup.errors[:company]).to_not be_nil
+        expect(@signup.errors[:email]).to_not be_nil
+        expect(@signup.errors[:password]).to_not be_nil
       end
     end
 
-    context 'password is too short' do
+    context 'when password is too short' do
       before do
         params = { user: {first_name: "Joe",
                            last_name: "Doe",
@@ -75,18 +70,17 @@ describe Signup do
         @signup = Signup.new(params)
       end
 
-      it "can't be saved" do
+      it "is invalid" do
         expect(@signup).to be_invalid
       end
 
       it 'has right error' do
         @signup.valid?
-        expect(@signup.errors.full_messages).to include("Password is too short (minimum is 8 characters)")
+        expect(@signup.errors[:password]).to_not be_nil
       end
     end
-    context 'email has already been taken' do
+    context 'when email has already been taken' do
       before do
-        create(:user, email: "example@example.com")
         params = { user: {first_name: "Joe",
                            last_name: "Doe",
                            email: "example@example.com",
@@ -94,15 +88,18 @@ describe Signup do
                            password_confirmation: "password",
                            company: { company_name: "my company"}}}
         @signup = Signup.new(params)
+        user_email = 'EXAmple@exampLe.com'
+        User.new(email: user_email)
+        User.stub(:where).with("lower(email) = ?", user_email.downcase) {["user"]}
       end
 
-      it "can't be saved" do
+      it "is invalid" do
         expect(@signup).to be_invalid
       end
 
       it 'has right error' do
         @signup.valid?
-        expect(@signup.errors.full_messages).to include("Email has already been taken")
+        expect(@signup.errors[:email]).to_not be_nil
       end
     end
   end
