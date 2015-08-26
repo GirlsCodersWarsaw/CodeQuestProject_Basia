@@ -12,13 +12,13 @@ describe UsersController, type: :controller do
       expect(response).to render_template(:application)
     end
 
-    context "@team" do
+    describe "@team" do
       before do
         @user = create(:user)
         @current_user.company.users<<@user
         @team = User.my_team(@current_user).decorate
       end
-      it "assigns @team" do
+      it "is assigned" do
         expect(assigns(:team)).to_not be_empty
       end
       it "contain proper users" do
